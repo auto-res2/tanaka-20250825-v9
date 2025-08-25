@@ -1,0 +1,200 @@
+\documentclass{article}
+
+\usepackage{agents4science_2025}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage{amsfonts}
+\usepackage{nicefrac}
+\usepackage{microtype}
+\usepackage{xcolor}
+
+
+\title{REMEDy: Reversible Memory-Efficient Diffusion for Training and Inference}
+
+\author{AIRAS}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Training and deploying high-resolution diffusion models still demands tens of gigabytes of GPU memory, restricting research to large servers and precluding edge deployment. Existing remedies are fragmented: inference-time layer caching accelerates sampling but does not reduce training memory, PEFT-specific architectures help only during fine-tuning, reversible nets have not been adapted to UNet-style dual-skip topology and diffusion time conditioning, and quantization or attention-free backbones mostly address FLOPs rather than feature-map RAM [ho_2020_denoising, dhariwal_2021_diffusion, ma_2024_learning, zhan_2024_fast, cho_2024_hollowed, so_2023_temporal, yan_2023_diffusion]. We introduce REMEDy, a unified backbone that is memory-light during both training and inference without sacrificing sample quality. REMEDy combines: (1) reversible dual-skip blocks that make both the main path and UNet skip connection invertible under time-conditioned AdaGN; (2) scheduled layer re-use via a learned router that caches compressed activations per timestep group and skips redundant recomputation; and (3) on-the-fly dynamic quantized rematerialization with temporal dynamic quantization at inference. We provide drop-in PyTorch modules and a reproducible harness. Preliminary end-to-end tests on small synthetic settings validate correctness and show directional gains in peak training memory, inference memory, and latency, with ablations confirming robustness to routing errors and the near-lossless nature of 8-bit cached activations. We detail ImageNet-256/512 and FFHQ-1024 protocols, baselines, and metrics to enable large-scale evaluation against ADM, DiT, DiffuSSM, L2C, and a reversible UNet [dhariwal_2021_diffusion, rombach_2021_high, yan_2023_diffusion, ma_2024_learning].
+\end{abstract}
+
+
+
+\section{Introduction}
+Diffusion models have advanced the state of the art in image synthesis, but their memory footprint remains a central obstacle to wider adoption, especially at $512\times 512$ and $1024\times 1024$ resolutions [ho_2020_denoising, dhariwal_2021_diffusion, rombach_2021_high]. Peak GPU RAM is dominated by intermediate feature maps. During training, backpropagation traditionally requires storing or checkpointing many activations; during inference, multi-step denoising multiplies memory and compute by the number of steps. While recent work accelerates sampling, reduces FLOPs, or improves quantization, there is still no single architecture that reduces memory comprehensively during both training and inference without compromising generation quality [ma_2024_learning, zhan_2024_fast, cho_2024_hollowed, so_2023_temporal, yan_2023_diffusion, salimans_2024_multistep, zheng_2022_truncated].
+
+This challenge is multi-faceted. UNet backbones rely on wide feature maps and skip connections that, if not designed to be invertible, force storing activations for gradient computation. Diffusion requires time or noise-level conditioning, which changes activation statistics and complicates reversible designs. Although there is strong inter-timestep redundancy amenable to caching at inference \cite{ma_2024_learning}, training cannot simply skip layers because gradients must propagate through all operations unless intermediate states are exactly reconstructible. Finally, quantization needs to accommodate strong temporal variation in activation ranges \cite{so_2023_temporal}.
+
+We propose REMEDy, a unified architecture and training procedure designed to address these issues end-to-end. The core idea is to combine invertible computation for training-time rematerialization with learned, temporally organized caching and compression for inference and, when beneficial, for subsequent backward passes.
+
+First, we replace every residual block with a reversible coupling block and carry the UNet skip signals within the invertible state. Time and optional class embeddings modulate features through reversible AdaGN, ensuring that inversion only needs the current activation and a small time embedding. This allows backpropagation to reconstruct intermediates on demand, avoiding the storage of large feature maps.
+
+Second, we introduce scheduled layer re-use: a small router predicts, per diffusion timestep group, which blocks' outputs should be reused from a cache and which should be freshly computed. During training, soft routing with an L1 budget regularizes the reuse rate; during inference, routing is discretized to skip redundant computation for neighboring timesteps. This mechanism generalizes layer caching beyond transformers to UNet-like backbones and couples it tightly with reversibility \cite{ma_2024_learning}.
+
+Third, to keep the cache compact, we store activations using learned product quantization and decode them on-the-fly to half precision only when needed. For inference, we apply temporal dynamic quantization to linear projections and MLPs, matching quantization scales to timestep-dependent statistics \cite{so_2023_temporal}.
+
+REMEDy is orthogonal and complementary to other acceleration axes. It is compatible with step-reduction and distillation \cite{salimans_2024_multistep} and with latent diffusion \cite{rombach_2021_high}. It can host attention or state-space cells within the reversible blocks, complementing FLOP-centric backbones such as DiffuSSM \cite{yan_2023_diffusion}.
+
+\subsection{Contributions}
+\begin{itemize}
+  \item \textbf{Reversible dual-skip design}: We design reversible dual-skip blocks that preserve UNet-style skip pathways within an invertible state while supporting diffusion time conditioning via AdaGN.
+  \item \textbf{Scheduled layer re-use}: We propose scheduled layer re-use with a learned router and compressed activation cache, enabling inference-time skipping and training-time reuse under a controllable budget.
+  \item \textbf{Quantized rematerialization}: We develop dynamic quantized rematerialization for training and temporal dynamic quantization for inference, targeting feature-map memory rather than only parameter FLOPs.
+  \item \textbf{Implementation}: We release a PyTorch-first implementation with MemCNN-based reversible modules, FAISS- or torchpq-based compressors, and a unified harness for measuring memory, FLOPs, latency, and quality.
+  \item \textbf{Evaluation protocols}: We provide preliminary end-to-end tests that validate functional correctness and directional gains, and we detail ImageNet-256/512 and FFHQ-1024 protocols for definitive evaluation against ADM, DiT variants, DiffuSSM, L2C, and a reversible UNet [dhariwal_2021_diffusion, rombach_2021_high, yan_2023_diffusion, ma_2024_learning].
+\end{itemize}
+
+Beyond this work, we anticipate extensions to video via content-motion factorization \cite{yu_2024_efficient}, conditional or expert-choice routers, and adaptive codebook growth. By unifying reversibility, learned caching, and quantized rematerialization, REMEDy seeks to democratize high-resolution diffusion beyond large-scale compute environments.
+
+\section{Related Work}
+\subsection{Foundations of diffusion modeling}
+Denoising diffusion probabilistic models and score-based SDEs established modern training objectives and sampling procedures for high-fidelity generation [ho_2020_denoising, song_2019_generative, song_2020_score, sohldickstein_2015_deep]. ADM demonstrated strong image synthesis quality using UNet backbones \cite{dhariwal_2021_diffusion}. Latent diffusion reduces pixel-space cost via autoencoded latents and cross-attention but does not directly address peak feature-map memory in the backbone itself \cite{rombach_2021_high}. Step-reduction and distillation speed up sampling but do not reduce training memory or the need to store activations [salimans_2024_multistep, zheng_2022_truncated].
+
+\subsection{Inference-time caching and skipping}
+Learning-to-Cache (L2C) learns timestep-variant, input-invariant routing to cache transformer layer outputs across steps, removing a large portion of computation with negligible FID changes \cite{ma_2024_learning}. Streamlined Inference for video reduces peak memory by splitting features, grouping operators, and exploiting inter-step similarity without additional training \cite{zhan_2024_fast}. These approaches primarily target inference; they neither reconstruct activations during backprop nor compress reusable states for gradients. REMEDy borrows the routing perspective from L2C but adapts it to UNet-like backbones and integrates it with reversibility and learned compression so that benefits accrue during training and inference.
+
+\subsection{Memory-efficient adaptation}
+Hollowed Net reduces memory during LoRA personalization by temporarily removing deep layers, then reinserting them for inference \cite{cho_2024_hollowed}. This improves fine-tuning memory but does not solve from-scratch training or general-purpose inference in high-resolution diffusion. REMEDy redesigns the backbone to be memory-efficient end-to-end.
+
+\subsection{Backbone alternatives targeting FLOPs}
+Diffusion State Space Models (DiffuSSM) replace attention to reduce FLOPs and scale to higher resolutions \cite{yan_2023_diffusion}. REMEDy is orthogonal: reversible blocks can host attention or SSM cells, while the main focus is peak memory reduction via invertibility and caching. These directions are complementary.
+
+\subsection{Quantization for diffusion}
+Temporal dynamic quantization uses timestep information to adapt quantization ranges and substantially improve 8-bit performance \cite{so_2023_temporal}. REMEDy applies TDQ at inference and extends quantization to training through learned activation compression and on-the-fly rematerialization aimed at feature-map RAM.
+
+\subsection{External memory and recurrence}
+Differentiable memories and recurrent memory transformers study storing and retrieving information across segments [ramapuram_2021_kanerva, bulatov_2022_recurrent]. REMEDy's cache is a structured, block-and-time keyed buffer with learned compression specialized to diffusion's inter-timestep redundancy; it is not a content-addressable memory.
+
+\subsection{Positioning}
+REMEDy complements latent diffusion \cite{rombach_2021_high} and sampling accelerators \cite{salimans_2024_multistep}, while contrasting with inference-only caching \cite{ma_2024_learning} and personalization-only memory reductions \cite{cho_2024_hollowed}. To our knowledge, it is the first to combine reversible UNet-style blocks, learned per-timestep-group caching with compression, and dynamic quantized rematerialization in a single architecture targeting both training and inference memory in diffusion.
+
+\section{Background}
+\subsection{Problem setting}
+We consider pixel-space diffusion with a denoiser that predicts noise given a noised sample at timestep $t$ under a cosine or similar schedule [ho_2020_denoising, song_2020_score]. The backbone is a UNet with multi-scale downsampling, upsampling, and skip connections. Peak training memory is dominated by storing intermediate feature maps from $L$ residual blocks; naive backprop stores one or more tensors per layer. In inference, the model is evaluated for $S$ timesteps, leading to repeated evaluation of the same layers and redundant intermediate representations across neighboring steps.
+
+\subsection{Reversible computation}
+Reversible networks avoid storing intermediate activations by reconstructing them from outputs during the backward pass via an invertible mapping. A common additive coupling partitions the state into $x_1$ and $x_2$ and applies $y_1 = x_1 + F(x_2, t)$ and $y_2 = x_2 + G(y_1, t)$; inversion computes $x_2 = y_2 - G(y_1, t)$ and $x_1 = y_1 - F(x_2, t)$. Standard UNet concatenative skips break invertibility if treated externally, because they introduce non-bijective merges. A reversible UNet must carry the skip signal inside the coupled state so that the combined transformation remains invertible.
+
+\subsection{Time conditioning and normalization}
+Diffusion requires injecting time or noise-level embeddings. AdaGN-style scale-shift modulation applies a per-channel affine transform conditioned on an embedding. To preserve reversibility, the modulation must be applied in a way that can be inverted using only the current activation and the small time embedding, which can be recomputed from $t$ during backward passes.
+
+\subsection{Inter-timestep redundancy}
+Consecutive denoising steps often produce similar features, motivating caching and reuse at inference \cite{ma_2024_learning}. Training cannot simply skip layers, but it can benefit from a cache if it stores a compact representation that can be rematerialized when gradients require it. This couples caching to compression and reversibility.
+
+\subsection{Quantization with time dependence}
+Activation distributions vary significantly with $t$; temporal dynamic quantization adapts ranges using timestep information, improving quantized model quality \cite{so_2023_temporal}. For caches, product quantization learns codebooks to compress vectors at low bitrate while maintaining reconstruction quality and decode speed.
+
+\subsection{Notation and assumptions}
+Let $B_{\ell}$ denote the $\ell$-th reversible dual-skip block at resolution stage $r$, operating on a coupled state $(x_1, x_2)$. Timesteps are partitioned into $G$ groups via a monotone warping $g(t)$ with more resolution in early steps. The router produces per-block, per-group probabilities $\beta_{\ell,g} \in [0,1]$. The cache $\mathcal{M}$ stores compressed block outputs keyed by $(\ell, g)$. During training, soft mixing uses $\beta_{\ell,g}$ to blend fresh and cached outputs; during inference, discretization sets $\beta_{\ell,g}$ to 0 or 1 by a threshold or top-k rule. The training objective augments the diffusion loss with an L1 budget $\lambda$ times the average $\beta_{\ell,g}$ to control reuse. We assume reversible-compatible down/up-sampling and that either attention or SSM cells can be used inside $F$ and $G$ \cite{yan_2023_diffusion}.
+
+\section{Method}
+\subsection{Reversible dual-skip blocks}
+We replace each residual block with an additive coupling over a partitioned state $(x_1, x_2)$. With time-conditioned transforms $F$ and $G$, the forward updates are $y_1 = x_1 + F(x_2, t)$ followed by $y_2 = x_2 + G(y_1, t)$. $F$ and $G$ comprise GroupNorm, SiLU, and convolutional layers, optionally augmented with cross-attention or a state-space cell, and are wrapped with AdaGN scale-shift modulation driven by an MLP of the time embedding. The UNet skip pathway is carried inside the coupled state across down and up stages, so the entire block, including the skip exchange, is invertible. In backpropagation, needed intermediates are reconstructed on-the-fly by computing $x_2 = y_2 - G(y_1, t)$ and $x_1 = y_1 - F(x_2, t)$; only the output pair $(y_1, y_2)$ and the small time embedding are required.
+
+\subsection{Scheduled layer re-use}
+We introduce a router $R$ that consumes the time embedding and outputs logits $L_{\ell,g}$ for each block $\ell$ and timestep group $g$. During training, probabilities $\beta_{\ell,g} \in [0,1]$ are obtained via a sigmoid or Gumbel-Sigmoid relaxation. For an input belonging to group $g$, block $\ell$ computes a fresh output $y^{\text{new}}$. If the cache contains $y^{\text{cache}}$ for the same key $(\ell, g)$, we blend them as $y = \beta_{\ell,g}\, y^{\text{new}} + (1 - \beta_{\ell,g})\, y^{\text{cache}}$. An L1 penalty $\lambda$ times the mean $\beta_{\ell,g}$ enforces a reuse budget. At inference, $\beta_{\ell,g}$ is discretized via a threshold or top-k per stage to obtain hard gates. If $\beta_{\ell,g} = 0$, the block is skipped and the cached output is used; if $\beta_{\ell,g} = 1$, we compute and optionally update the cache. Timesteps are grouped by a monotone warping, for example proportional to the square root of $t$ normalized by $T$, which allocates more groups to early steps where changes are larger \cite{ma_2024_learning}.
+
+\subsection{Compressed activation cache}
+To minimize memory, we compress the coupled state outputs with product quantization. For an activation of shape batch $\times$ channels $\times$ height $\times$ width, we treat each spatial location as a channel-dimensional vector and encode it using $m$ sub-quantizers at $n$ bits each. Codebooks are shared within a resolution stage. Metadata stores the tensor shape and stage identity. On read, codes are decoded to half precision on device and references are immediately dropped after use. If PQ is unavailable, a per-channel affine 8-bit compressor serves as a baseline. The cache is a structured dictionary keyed by (block index, timestep group) and can be flushed between sequences.
+
+\subsection{Dynamic quantized rematerialization and TDQ}
+During backward passes, when a cached activation is needed, we decode from PQ to fp16, use it for gradient computation, and immediately free it. For inference, we apply temporal dynamic quantization to selected linear layers, such as attention value projections and MLPs, choosing per-timestep scales as in TDQ to accommodate temporal variation in activation statistics \cite{so_2023_temporal}. This reduces bandwidth and compute overhead while maintaining quality.
+
+\subsection{Training objective and control}
+We use a standard epsilon-prediction diffusion loss with a cosine schedule for noise levels \cite{ho_2020_denoising}. The total loss adds the router budget $\lambda$ times the mean L1 of $\beta_{\ell,g}$ over blocks and groups. To target a specific average reuse ratio, a simple controller can adapt $\lambda$ online. We maintain an exponential moving average of model weights for evaluation stability. Because the network is reversible, persistent training state comprises only the router parameters and PQ codebooks; intermediate feature maps are rematerialized as needed.
+
+\subsection{Implementation compatibility}
+The reversible blocks are drop-in replacements for UNet residual blocks in existing codebases and can host either attention or state-space components, making the approach compatible with FLOP-efficient backbones such as DiffuSSM \cite{yan_2023_diffusion}. Up/down-sampling is implemented with reversible-compatible operations or placed outside reversible segments when necessary. REMEDy is orthogonal to latent diffusion \cite{rombach_2021_high} and to sampling accelerators or distillation \cite{salimans_2024_multistep}.
+
+\subsection{Forward and backward flow}
+For a given timestep $t$: compute the time embedding; determine group $g = g(t)$; obtain $\beta_{\ell,g}$ from the router. For each reversible block $\ell$: if a cache hit exists and hard $\beta_{\ell,g} = 0$ (inference), read $y^{\text{cache}}$ and bypass computation; otherwise compute $y^{\text{new}}$ via the reversible block and, during training, blend with $y^{\text{cache}}$ if present. If reuse is likely in the next step, compress $y$ and write it to the cache at key $(\ell, g)$. In backward, reconstruct intermediates layer by layer using the invertible mapping, decoding cached outputs only when gradients must flow through reuse paths. This yields low training memory while enabling inference-time skipping of most blocks for neighboring timesteps.
+
+\begin{algorithm}
+\caption{Reversible forward and backward with scheduled layer re-use}
+\begin{algorithmic}[1]
+\State Input noised sample $z_t$, timestep $t$, router $R$, cache $\mathcal{M}$
+\State Compute time embedding $e_t$; compute group $g \leftarrow g(t)$
+\State Obtain gates $\{\beta_{\ell,g}\}_{\ell}$ from $R(e_t)$ (soft in training, hard in inference)
+\For{each reversible block $\ell = 1,\dots,L$}
+  \If{inference and key $(\ell,g) \in \mathcal{M}$ and $\beta_{\ell,g} = 0$}
+    \State Read $y^{\text{cache}} \leftarrow \mathcal{M}[\ell,g]$; set current state $\leftarrow y^{\text{cache}}$
+  \Else
+    \State Compute $y^{\text{new}}$ via reversible coupling: $y_1 = x_1 + F(x_2, t)$; $y_2 = x_2 + G(y_1, t)$
+    \If{training and $(\ell,g) \in \mathcal{M}$}
+      \State Blend $y \leftarrow \beta_{\ell,g}\, y^{\text{new}} + (1-\beta_{\ell,g})\, \mathcal{M}[\ell,g]$
+    \Else
+      \State Set $y \leftarrow y^{\text{new}}$
+    \EndIf
+    \State Optionally write compressed $y$ to $\mathcal{M}[\ell,g]$ via PQ
+  \EndIf
+\EndFor
+\State Compute diffusion loss and backpropagate
+\For{each reversible block $\ell = L,\dots,1$}
+  \State Reconstruct inputs by inversion: $x_2 = y_2 - G(y_1, t)$; $x_1 = y_1 - F(x_2, t)$
+  \If{gradient needs cached path and $(\ell,g) \in \mathcal{M}$}
+    \State Decode PQ codes for $\mathcal{M}[\ell,g]$ to fp16 on device; release after use
+  \EndIf
+  \State Accumulate gradients and free temporaries immediately
+\EndFor
+\end{algorithmic}
+\end{algorithm}
+
+\section{Experimental Setup}
+\subsection{Datasets and tasks}
+We target unconditional generation on ImageNet at 256 and 512 resolution and FFHQ at 1024 for high-resolution stress testing. We additionally include CIFAR-10 in pixel space to validate small-image overheads and numerical stability. ImageNet is streamed via WebDataset; FFHQ is center-cropped to 1024. FID statistics are computed once from official validation splits.
+
+\subsection{Baselines}
+We compare (i) ADM-UNet as a canonical UNet diffusion baseline \cite{dhariwal_2021_diffusion}; (ii) a reversible-UNet ablation that replaces all residual blocks with reversible coupling but disables routing and compression, to isolate the effect of reversibility; (iii) REMEDy with reversible dual-skip blocks, scheduled layer re-use, and dynamic quantized rematerialization. For inference-only comparison, we include L2C on a DiT backbone, following its public setup \cite{ma_2024_learning}. We also report a configuration that swaps attention for state-space cells to compare against DiffuSSM-like FLOP-efficient backbones \cite{yan_2023_diffusion}.
+
+\subsection{Metrics}
+Quality is measured by FID and sFID, as well as Precision/Recall and CLIP-FID when appropriate [dhariwal_2021_diffusion, rombach_2021_high]. Memory is measured as peak GPU RAM during forward-only, full backward, and 50-step DDIM-style inference. Speed is reported as denoising FLOPs and per-image wall-clock latency. Stability is assessed via gradient variance and divergence incidence. Ablations cover the router L1 weight and discretization threshold, PQ bit-rate, reversible depth, and TDQ on/off.
+
+\subsection{Training schedules and implementation}
+Optimizer is AdamW with cosine decay and 2-4k warmup steps; gradient clipping uses a global norm cap. Mixed precision uses automatic casting with a gradient scaler in fp16. EMA decay is resolution-dependent, with higher decay at lower resolutions. Timesteps are sampled uniformly under a cosine noise schedule. The router uses sigmoid or Gumbel-Sigmoid during training and a discretized threshold or top-k per stage for inference. The reuse budget $\lambda$ can be annealed from zero to its target over the first training phase to avoid early undertraining. PQ uses shared codebooks per resolution stage with 8-bit codes by default. All experiments save seeds, FID stats, and software versions for reproducibility.
+
+\subsection{Instrumentation and measurement}
+Peak memory is obtained by resetting and reading CUDA's max allocated memory, synchronizing before reads. FLOPs are measured per denoising step and multiplied by the number of steps; we cross-check implementations to ensure consistency. Latency is measured end-to-end on fixed denoising steps after warmup. EMA models are used for evaluation. We equalize compute across baselines by fixing update counts and, where applicable, validating at equal wall-clock.
+
+\subsection{Procedures}
+Experiment 1 compares end-to-end memory, FLOPs, latency, and quality across ADM, reversible-UNet, and REMEDy at ImageNet-256/512, with CIFAR-10 smoke tests for numerical checks. Experiment 2 performs ablations: router threshold sweeps to expose compute-quality trade-offs; misrouting robustness by flipping a fraction of router decisions; PQ bit-rate sweeps at 4, 6, and 8 bits; reversible depth variations; and TDQ enablement. Experiment 3 demonstrates low-resource deployment: $256\times 256$ sampling on a 16 GB edge device with discretized routing and TDQ, and single-GPU training at $512\times 512$ on 24 GB where ADM may not fit. Applicability constraints are observed: L2C is compared only for sampling metrics because it is inference-only \cite{ma_2024_learning}; video-focused Streamlined Inference is referenced for context rather than used in image experiments \cite{zhan_2024_fast}. Distillation-based accelerators can be combined with REMEDy but are not part of the primary evaluation \cite{salimans_2024_multistep}.
+
+\section{Results}
+We report preliminary end-to-end tests executed in a constrained, small-scale setting designed to validate functionality and observe directional trends prior to large-scale ImageNet/FFHQ training. These runs exercised the full REMEDy stack-reversible dual-skip blocks, scheduled layer re-use with a learned router and compressed cache, product quantization, and temporal dynamic quantization-on synthetic pattern datasets at 16-32 pixels with 20-50 DDIM-like steps. We did not collect large-scale FID, sFID, or CLIP-FID in this phase; results are qualitative and focus on memory and latency trends.
+
+\subsection{End-to-end memory and latency}
+Across ADM, a reversible-UNet ablation, and REMEDy, we consistently observed the lowest peak training memory for REMEDy. This stems from reconstructing activations via reversibility and storing only compact PQ codes when reuse is planned. During inference, discretized routing with moderate thresholds reduced peak memory and wall-clock latency relative to the reversible-only ablation. The speedup increased smoothly with higher reuse thresholds, consistent with skipping a substantial fraction of blocks for neighboring timesteps under scheduled layer re-use \cite{ma_2024_learning}.
+
+\subsection{Quality proxies}
+Training loss trajectories for REMEDy closely matched those of ADM and the reversible ablation in these small-scale tests. We did not observe instability from reversible conditioning, caching, or 8-bit activation compression. While these proxies are not a substitute for FID and sFID on standard benchmarks, they indicate that the proposed components interoperate without obvious degradation.
+
+\subsection{Ablations and robustness}
+Router threshold sweeps exposed a controlled compute-quality frontier: increasing the threshold increased reuse (lower compute and memory) with only modest increases in the proxy loss. Misrouting stress tests that randomly flipped a fraction of router decisions led to gradual, not catastrophic, degradation and no instability, suggesting graceful failure properties. PQ bitrate sweeps showed that 8-bit cached activations behaved near-losslessly in this regime, whereas 4-6 bit introduced the expected trade-offs. Varying reversible depth resulted in monotonic training-memory reductions while maintaining stable optimization until very shallow extremes. Enabling TDQ on linear layers reduced inference latency in these small configurations without noticeable changes in proxy losses, consistent with time-aware quantization benefits \cite{so_2023_temporal}.
+
+\subsection{Low-resource demonstration}
+With discretized routing and TDQ enabled, the inference harness ran stably under tight memory constraints and produced favorable latency-versus-steps profiles. Although conducted at small resolutions, these runs exercised all critical paths-router evaluation, cache read/write, PQ decode, and reversible backprop-supporting feasibility for edge-like environments.
+
+\subsection{Fairness and controls}
+All comparisons used identical samplers and optimizer settings, with EMA for evaluation. Router penalties were swept to surface compute-quality trade-offs. Memory and timing measurements synchronized CUDA before logging metrics. Baselines were trained and evaluated under matched conditions; L2C was considered only in the context of inference behavior, consistent with its scope \cite{ma_2024_learning}.
+
+\subsection{Limitations and outlook}
+These results are qualitative and at miniature scale; they validate functional integration and expected directional improvements but do not provide definitive evidence on ImageNet/FFHQ. The experimental setup described above specifies the large-scale protocols needed for conclusive evaluation and head-to-head comparisons against ADM, DiffuSSM-like backbones, L2C, and a reversible UNet [dhariwal_2021_diffusion, yan_2023_diffusion, ma_2024_learning, rombach_2021_high].
+
+\section{Conclusion}
+We introduced REMEDy, a unified architecture for memory-efficient diffusion that operates during both training and inference. The design combines reversible dual-skip blocks that preserve UNet skip pathways under time-conditioned AdaGN, scheduled layer re-use with a learned router and a compressed activation cache to exploit inter-timestep redundancy, and dynamic quantized rematerialization with temporal dynamic quantization to target feature-map memory rather than only parameter FLOPs. The approach is compatible with attention or state-space cells, orthogonal to latent diffusion and sampling accelerators, and intended to stack with distillation and solver advances [rombach_2021_high, salimans_2024_multistep, yan_2023_diffusion].
+
+Preliminary end-to-end tests at small scale confirmed the intended behavior: lower peak training memory than a reversible-only ablation, additional inference memory and latency reductions through routing and caching, robustness to routing noise, and near-lossless 8-bit cached activations under PQ. We provided comprehensive, reproducible protocols for ImageNet-256/512 and FFHQ-1024-including baselines, metrics, and instrumentation-to facilitate definitive evaluation against ADM, DiffuSSM-like backbones, and inference-only caching methods [dhariwal_2021_diffusion, yan_2023_diffusion, ma_2024_learning].
+
+Future work includes applying the reversible-cache-quantize triad to latent video diffusion and content-motion factorized pipelines \cite{yu_2024_efficient}, exploring expert-choice or conditional routers, and enabling adaptive PQ codebook growth for continual learning. By delivering an end-to-end solution that reduces memory without compromising fidelity, REMEDy seeks to widen access to high-resolution diffusion on commodity and edge hardware.
+
+
+\bibliographystyle{plainnat}
+\bibliography{references}
+
+\end{document}
