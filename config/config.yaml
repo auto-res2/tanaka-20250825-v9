@@ -1,0 +1,15 @@
+# Default configuration for REMEDy minimal experiments
+experiment: quick  # options: quick, exp1, exp2, exp3, eval
+
+image_size: 16
+steps: 10
+batch_size: 8
+router_thresh: 0.7
+
+previews: true
+
+data:
+  patterns: [blobs, checkerboard, stripes]
+
+# Model lists for exp1 are baked-in to the script for reproducibility.
+# To change hyperparameters globally, adjust here and edit scripts if needed.
