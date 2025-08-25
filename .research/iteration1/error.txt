@@ -1,0 +1,47 @@
+/home/runner/work/tanaka-20250825-v9/tanaka-20250825-v9/src/train.py:523: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler(enabled=(device.type == "cuda"))
+Traceback (most recent call last):
+  File "/home/runner/work/tanaka-20250825-v9/tanaka-20250825-v9/src/main.py", line 73, in <module>
+    main()
+  File "/home/runner/work/tanaka-20250825-v9/tanaka-20250825-v9/src/main.py", line 40, in main
+    test_quick()
+  File "/home/runner/work/tanaka-20250825-v9/tanaka-20250825-v9/src/train.py", line 908, in test_quick
+    _ = run_experiment_1(patterns=["blobs", "checkerboard"], image_size=16, steps=10, batch_size=8, out_images_dir=IMAGES_DIR)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/tanaka-20250825-v9/tanaka-20250825-v9/src/train.py", line 584, in run_experiment_1
+    trained_models, history, diffusion = train_models_for_patterns(patterns, image_size, steps, batch_size, configs, out_images_dir)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/tanaka-20250825-v9/tanaka-20250825-v9/src/train.py", line 539, in train_models_for_patterns
+    loss = diffusion_loss_step(model, diffusion, x0, lambda_l1=cfg.lambda_l1, mem_store=mem_store)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/tanaka-20250825-v9/tanaka-20250825-v9/src/train.py", line 479, in diffusion_loss_step
+    pred, aux = model(xt, t, lambda_l1=lambda_l1)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/_tool/Python/3.11.13/x64/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/_tool/Python/3.11.13/x64/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/tanaka-20250825-v9/tanaka-20250825-v9/src/train.py", line 356, in forward
+    h = h + blk(h, t_emb)
+            ^^^^^^^^^^^^^
+  File "/home/runner/work/_tool/Python/3.11.13/x64/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/_tool/Python/3.11.13/x64/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/tanaka-20250825-v9/tanaka-20250825-v9/src/train.py", line 295, in forward
+    h = self.attn(h, t_emb)
+        ^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/tanaka-20250825-v9/tanaka-20250825-v9/src/train.py", line 280, in attn
+    q = self.proj_q(h, t_emb).view(B, T, self.n_heads, C // self.n_heads).transpose(1, 2)
+        ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/_tool/Python/3.11.13/x64/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/_tool/Python/3.11.13/x64/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Linear.forward() takes 2 positional arguments but 3 were given
