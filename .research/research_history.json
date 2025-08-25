@@ -671,6 +671,68 @@
       }
     }
   ],
+  "reference_research_study_list": [
+    {
+      "title": "Generative modeling by estimating gradients of the data distribution"
+    },
+    {
+      "title": "Plug and play language models: A simple approach to controlled text generation"
+    },
+    {
+      "title": "Score-based generative modeling through stochastic diﬀerential equations"
+    },
+    {
+      "title": "Denoising diﬀusion probabilistic models"
+    },
+    {
+      "title": "Hierarchical text-conditional image generation with clip latents"
+    },
+    {
+      "title": "High-resolution image synthesis with latent diﬀusion models"
+    },
+    {
+      "title": "Deep unsupervised learning using nonequilibrium thermodynamics"
+    },
+    {
+      "title": "Generative adversarial nets"
+    },
+    {
+      "title": "Variational inference with normalizing ﬂows"
+    },
+    {
+      "title": "A connection between score matching and denoising autoencoders"
+    },
+    {
+      "title": "The intrinsic dimension of images and its impact on learning"
+    },
+    {
+      "title": "A global geometric framework for nonlinear dimensionality reduction"
+    },
+    {
+      "title": "Nonlinear dimensionality reduction by locally linear embedding"
+    },
+    {
+      "title": "Nonparametric regression using deep neural networks with relu activation function"
+    },
+    {
+      "title": "Adaptivity of deep relu network for learning in besov and mixed smooth besov spaces: optimal rate and curse of dimensionality"
+    },
+    {
+      "title": "Adaptive approximation and generalization of deep neural network with intrinsic dimensionality"
+    },
+    {
+      "title": "Optimal approximation rate of relu networks in terms of width and depth"
+    },
+    {
+      "title": "Convergence of denoising diﬀusion models under the manifold hypothesis"
+    },
+    {
+      "title": "Convergence for score-based generative modeling with polynomial complexity"
+    },
+    {
+      "title": "Sampling is as easy as learning the score: theory for diﬀusion models with minimal data assumptions"
+    }
+  ],
   "new_method": {
     "method": "Open Problems: Training and deploying high-resolution diffusion models still demands tens of gigabytes of GPU memory. Current remedies are fragmented: (1) inference-only layer caching (L2C, Streamlined-Inference) does not help training; (2) Hollowed-Net frees memory only during PEFT fine-tuning, not from-scratch training; (3) reversible networks slash training memory but have never been adapted to diffusion-specific time conditioning or UNet-style skip connections; (4) quantisation (TDQ) or attention-free backbones (DIFFU-SSM) attack FLOPs more than feature-map RAM.  As a consequence, state-of-the-art 1024×1024 models still require ≥40 GB for a batch of 4, limiting research to large servers and ruling out edge devices.  We lack an end-to-end architecture that is simultaneously memory-light •during training• and •during inference• without sacrificing sample quality.\nMethods: We propose REMEDy (REversible-Memory-Efficient Diffusion), a new backbone that unifies three ideas in a single architecture:\n\n1. Reversible Dual-Skip Blocks (R-DSB)\n   • Replace every UNet residual block with a reversible block:  [y1,y2]=F(x1)+x1,  G(x2)+x2.  Both the main path and the skip connection are computed reversibly, allowing us to recompute activations during back-prop instead of storing them.  A lightweight cross-attention or SSM cell is inserted inside F/G (choice toggled by config).\n   • Time/Class embeddings are injected through scale-shift modulation (AdaGN) that is itself reversible by storing only the scalar “t”.\n\n2. Scheduled Layer Re-use (SLR)\n   • Inspired by L2C, we train a tiny Router that decides, *per diffusion timestep group*, which R-DSB blocks should be recomputed and which ones can be read from a persistent hidden state M.\n   • During training, router probabilities are continuous and regularised with an L1 budget; activations required in the next step are compressed with a learned 8-bit PQ code and written to M (<< memory of full tensor).\n   • During inference the router is discretised; most layers (>80 %) are skipped for neighbouring timesteps, giving 1.8-2.2× memory & FLOP reduction.\n\n3. On-the-fly Dynamic Quantised Rematerialisation (DQ-R)\n   • When a stored activation is needed for the backward pass we decompress PQ and immediately cast to fp16; after its children finish the value is freed.\n   • For inference we apply Temporal Dynamic Quantisation (TDQ) to value projections and MLPs, using the timestep to choose the scale.\n\nImplementation changes to existing code-bases:\n• Drop-in `ReversibleResBlock` and `ReversibleAttention` modules (JAX & PyTorch).\n• `Router` head trained with added loss `λ‖β‖₁` as in L2C; needs <1 % parameters.\n• Activation compressor uses vector-quantised bottleneck (same codebook across blocks).\n• Modify diffusion trainer to save only the PQ codes & router logits, not full activations.\nExperimental Setup: Datasets / Tasks\n1. ImageNet-256 and ‑512 unconditional generation.\n2. FFHQ-1024 for high-res.\n3. Pixel-space CIFAR-10 to verify small-image overheads.\n\nBaselines\n• ADM (UNet), DiT-XL/2, DIFFU-SSM-XL, L2C-DiT for inference.\n• Reversible-UNet ablation (ours without router or PQ) to isolate each component.\n\nMetrics\n• Quality: FID, sFID, Precision/Recall, CLIP-FID.\n• Memory: peak GPU RAM in training (batch 4, fp16) and inference (single sample).\n• Speed: denoising FLOPs and wall-clock.\n• Stability: gradient variance, training divergence rate.\n• Ablations: router L1 weight, PQ code size, reversible depth.\n\nProcedure\n1. Train ADM baseline and REMEDy with identical data-aug and noise schedule on 8×A100-40 GB.\n2. Measure peak RAM via PyTorch profiler:\n   – forward only,\n   – backward (largest graph),\n   – inference 50 DDIM steps.\n3. Compare against L2C (inference) and Rev-UNet (training) baselines.\n4. Evaluate robustness: corrupt half of timesteps with wrong router mask and check FID drop; test quantisation to 4-bit activations.\n5. Edge-device demo: run 256×256 sampling on Jetson Orin 16 GB.\nResult: Expected outcomes:\n• Training: REMEDy cuts peak memory by ≈55-60 % vs ADM (from 38 GB→16 GB on ImageNet-512) enabling batch-8 on a single A100.\n• Inference: additional 35-45 % RAM and 40 % FLOP reduction over reversible-only model; on ImageNet-256 50-step DDIM latency drops from 0.42 s→0.25 s per 256² image.\n• Sample quality: FID within ±0.2 of ADM (possibly *better* due to deeper effective network allowed by memory headroom).\n• Ablations show:   – PQ codes of 8 bits lose <0.05 FID,   – Turning off router costs ×1.6 inference memory.\n• Robustness: mis-routing 20 % of layers increases FID by <0.5 → model gracefully degrades.\n• Edge-device: first diffusion model to sample 256² image in <5 s on Jetson with 10 W power.\nConclusion: REMEDy demonstrates that a single architectural redesign can tackle memory at *both* training and inference time without compromising generation fidelity.  By marrying reversible computation, learned layer caching, and learned activation compression, it frees >50 % GPU RAM and brings high-res diffusion within reach of commodity and edge hardware.  The framework is orthogonal to existing speed-up work (e.g., DPM-Solver, distillation) and can stack with them.  Future extensions include: (1) applying the same principles to latent-video diffusion, (2) integrating expert-choice routers for conditional generation, and (3) exploring autonomous PQ-codebook growth for continual learning.  REMEDy opens the door to democratising diffusion research beyond large-scale compute environments.",
     "experimental_design": {
