@@ -1,0 +1,2354 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(./paper.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-22>
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo))
+(./agents4science_2025.sty
+(/usr/share/texlive/texmf-dist/tex/latex/environ/environ.sty
+(/usr/share/texlive/texmf-dist/tex/latex/trimspaces/trimspaces.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/lineno/lineno.sty
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty))))
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def)
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+(/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/units/nicefrac.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.sty
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype-pdftex.def)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.cfg))
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx))
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def)
+No file paper.aux.
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: letterpaper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(92.14519pt, 430.00462pt, 92.14519pt)
+* v-part:(T,H,B)=(95.39737pt, 556.47656pt, 143.09605pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=430.00462pt
+* \textheight=556.47656pt
+* \oddsidemargin=19.8752pt
+* \evensidemargin=19.8752pt
+* \topmargin=-13.87262pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: letterpaper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(108.405pt, 397.48499pt, 108.40501pt)
+* v-part:(T,H,B)=(72.26999pt, 650.43pt, 72.27pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=397.48499pt
+* \textheight=650.43pt
+* \oddsidemargin=36.13501pt
+* \evensidemargin=36.13501pt
+* \topmargin=-37.0pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-ptm.cfg)
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd)
+! Missing $ inserted.
+<inserted text> 
+                $
+l.25 ...ess FLOPs rather than feature-map RAM [ho_
+                                                  2020_denoising, dhariwal_2...
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.26 \end{abstract}
+                   
+! Missing } inserted.
+<inserted text> 
+                }
+l.26 \end{abstract}
+                   
+
+Overfull \hbox (502.77176pt too wide) in paragraph at lines 25--26
+\T1/ptm/m/n/10 (-20) [ho$[]\OT1/cmr/m/n/10 020[]\OML/cmm/m/it/10 enoising; dhar
+iwal[]\OT1/cmr/m/n/10 021[]\OML/cmm/m/it/10 iffusion; ma[]\OT1/cmr/m/n/10 024[]
+\OML/cmm/m/it/10 earning; zhan[]\OT1/cmr/m/n/10 024[]\OML/cmm/m/it/10 ast; cho[
+]\OT1/cmr/m/n/10 024[]\OML/cmm/m/it/10 ollowed; so[]\OT1/cmr/m/n/10 023[]\OML/c
+mm/m/it/10 emporal; yan[]\OT1/cmr/m/n/10 023[]\OML/cmm/m/it/10 iffusion\OT1/cmr
+/m/n/10 ]\OML/cmm/m/it/10 :WeintroduceREMEDy; aunifiedbackbonethatismemory \OMS
+/cmsy/m/n/10 ^^@
+
+Overfull \hbox (87.57574pt too wide) in paragraph at lines 25--26
+\OML/cmm/m/it/10 lightduringbothtrainingandinferencewithoutsacrificingsamplequa
+lity:REMEDycombines \OT1/cmr/m/n/10 :
+
+Overfull \hbox (127.94081pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 (1)\OML/cmm/m/it/10 reversibledual \OMS/cmsy/m/n/10 ^^@ \OML/cm
+m/m/it/10 skipblocksthatmakeboththemainpathandUNetskipconnectioninvertibleunder
+time \OMS/cmsy/m/n/10 ^^@
+
+Overfull \hbox (389.45984pt too wide) in paragraph at lines 25--26
+\OML/cmm/m/it/10 conditionedAdaGN\OT1/cmr/m/n/10 ; (2)\OML/cmm/m/it/10 schedule
+dlayerre \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 useviaalearnedrouterthatcachesco
+mpressedactivationspertimestepgroupandskipsredundantrecomputation\OT1/cmr/m/n/1
+0 ; \OML/cmm/m/it/10 and\OT1/cmr/m/n/10 (3)\OML/cmm/m/it/10 on \OMS/cmsy/m/n/10
+ ^^@
+
+Overfull \hbox (161.50652pt too wide) in paragraph at lines 25--26
+\OML/cmm/m/it/10 the \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 flydynamicquantizedr
+ematerializationwithtemporaldynamicquantizationatinference:Weprovidedrop \OMS/c
+msy/m/n/10 ^^@
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
+\OML/cmm/m/it/10 inPyTorchmodulesandareproducibleharness:Preliminaryend \OMS/cm
+sy/m/n/10 ^^@ \OML/cmm/m/it/10 to \OMS/cmsy/m/n/10 ^^@
+
+Overfull \hbox (564.3585pt too wide) in paragraph at lines 25--26
+\OML/cmm/m/it/10 endtestsonsmallsyntheticsettingsvalidatecorrectnessandshowdire
+ctionalgainsinpeaktrainingmemory; inferencememory; andlatency; withablationscon
+firmingrobustnesstoroutingerrorsandthenear \OMS/cmsy/m/n/10 ^^@
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
+\OML/cmm/m/it/10 losslessnatureof\OT1/cmr/m/n/10 8 \OMS/cmsy/m/n/10 ^^@ \OML/cm
+m/m/it/10 bitcachedactivations:WedetailImageNet \OMS/cmsy/m/n/10 ^^@
+
+Overfull \hbox (359.88838pt too wide) in paragraph at lines 25--26
+\OML/cmm/m/it/10 scaleevaluationagainstADM; DiT; DiffuSSM; L\OT1/cmr/m/n/10 2\O
+ML/cmm/m/it/10 C; andareversibleUNet\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 dhariwal[
+]\OT1/cmr/m/n/10 021[]\OML/cmm/m/it/10 iffusion; rombach[]\OT1/cmr/m/n/10 021[]
+\OML/cmm/m/it/10 igh; yan[]\OT1/cmr/m/n/10 023[]\OML/cmm/m/it/10 iffusion; ma[]
+\OT1/cmr/m/n/10 024[]\OML/cmm/m/it/10 earning\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 
+:[]$ 
+! Extra }, or forgotten \endgroup.
+\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
+                                                  \fi 
+l.26 \end{abstract}
+                   
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd)
+! Missing $ inserted.
+<inserted text> 
+                $
+l.31 ...12$ and $1024\times 1024$ resolutions [ho_
+                                                  2020_denoising, dhariwal_2...
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.32 
+     
+
+Overfull \hbox (669.65685pt too wide) in paragraph at lines 31--32
+\T1/ptm/m/n/10 (-20) [ho$[]\OT1/cmr/m/n/10 020[]\OML/cmm/m/it/10 enoising; dhar
+iwal[]\OT1/cmr/m/n/10 021[]\OML/cmm/m/it/10 iffusion; rombach[]\OT1/cmr/m/n/10 
+021[]\OML/cmm/m/it/10 igh\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 :PeakGPURAMisdominat
+edbyintermediatefeaturemaps:Duringtraining; backpropagationtraditionallyrequire
+sstoringorcheckpointingmanyactivations\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 during
+inference; multi \OMS/cmsy/m/n/10 ^^@
+
+Overfull \hbox (1469.156pt too wide) in paragraph at lines 31--32
+\OML/cmm/m/it/10 stepdenoisingmultipliesmemoryandcomputebythenumberofsteps:Whil
+erecentworkacceleratessampling; reducesFLOPs; orimprovesquantization; thereisst
+illnosinglearchitecturethatreducesmemorycomprehensivelyduringbothtrainingandinf
+erencewithoutcompromisinggenerationquality\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 ma[
+]\OT1/cmr/m/n/10 024[]\OML/cmm/m/it/10 earning; zhan[]\OT1/cmr/m/n/10 024[]\OML
+/cmm/m/it/10 ast; cho[]\OT1/cmr/m/n/10 024[]\OML/cmm/m/it/10 ollowed; so[]\OT1/
+cmr/m/n/10 023[]\OML/cmm/m/it/10 emporal; yan[]\OT1/cmr/m/n/10 023[]\OML/cmm/m/
+it/10 iffusion; salimans[]\OT1/cmr/m/n/10 024[]\OML/cmm/m/it/10 ultistep; zheng
+[]\OT1/cmr/m/n/10 022[]\OML/cmm/m/it/10 runcated\OT1/cmr/m/n/10 ]\OML/cmm/m/it/
+10 :$ 
+
+Package natbib Warning: Citation `ma_2024_learning' on page 1 undefined on inpu
+t line 33.
+
+
+Package natbib Warning: Citation `so_2023_temporal' on page 1 undefined on inpu
+t line 33.
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-
+dist/fonts/enc/dvips/base/8r.enc}]
+
+Package natbib Warning: Citation `ma_2024_learning' on page 2 undefined on inpu
+t line 39.
+
+
+Package natbib Warning: Citation `so_2023_temporal' on page 2 undefined on inpu
+t line 41.
+
+
+Package natbib Warning: Citation `salimans_2024_multistep' on page 2 undefined 
+on input line 43.
+
+
+Package natbib Warning: Citation `rombach_2021_high' on page 2 undefined on inp
+ut line 43.
+
+
+Package natbib Warning: Citation `yan_2023_diffusion' on page 2 undefined on in
+put line 43.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd)
+! Missing $ inserted.
+<inserted text> 
+                $
+l.51 ...SSM, L2C, and a reversible UNet [dhariwal_
+                                                  2021_diffusion, rombach_20...
+
+
+! LaTeX Error: Command \end{itemize} invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.52 \end{itemize}
+                  
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.52 \end{itemize}
+                  
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.52 \end{itemize}
+                  
+! Missing $ inserted.
+<inserted text> 
+                $
+l.52 \end{itemize}
+                  
+
+Package natbib Warning: Citation `yu_2024_efficient' on page 2 undefined on inp
+ut line 54.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.58 ...ocedures for high-fidelity generation [ho_
+                                                  2020_denoising, song_2019_...
+
+
+! LaTeX Error: Command \bfseries invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.58 ...t backbones \cite{dhariwal_2021_diffusion}
+                                                  . Latent diffusion reduces...
+
+
+Package natbib Warning: Citation `dhariwal_2021_diffusion' on page 2 undefined 
+on input line 58.
+
+
+! LaTeX Error: Command \bfseries invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.58 ...e backbone itself \cite{rombach_2021_high}
+                                                  . Step-reduction and disti...
+
+
+Package natbib Warning: Citation `rombach_2021_high' on page 2 undefined on inp
+ut line 58.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.59 
+     
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--59
+\T1/ptm/m/n/10 (+20) Denoising dif-fu-sion prob-a-bilis-tic mod-els and score-b
+ased SDEs es-tab-lished mod-
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--59
+\T1/ptm/m/n/10 (+20) ern train-ing ob-jec-tives and sam-pling pro-ce-dures for 
+high-fidelity gen-er-a-tion
+
+Overfull \hbox (403.6583pt too wide) in paragraph at lines 58--59
+\T1/ptm/m/n/10 (-20) [ho$[]\OT1/cmr/m/n/10 020[]\OML/cmm/m/it/10 enoising; song
+[]\OT1/cmr/m/n/10 019[]\OML/cmm/m/it/10 enerative; song[]\OT1/cmr/m/n/10 020[]\
+OML/cmm/m/it/10 core; sohldickstein[]\OT1/cmr/m/n/10 015[]\OML/cmm/m/it/10 eep\
+OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 :ADMdemonstratedstrongimagesynthesisqualityusi
+ngUNetbackbones[]:Latentdiffusionreducespixel \OMS/cmsy/m/n/10 ^^@
+
+Overfull \hbox (11.44395pt too wide) in paragraph at lines 58--59
+\OML/cmm/m/it/10 spacecostviaautoencodedlatentsandcross \OMS/cmsy/m/n/10 ^^@ \O
+ML/cmm/m/it/10 attentionbutdoesnotdirectlyaddresspeakfeature \OMS/cmsy/m/n/10 ^
+^@
+
+Overfull \hbox (439.21127pt too wide) in paragraph at lines 58--59
+\OML/cmm/m/it/10 mapmemoryinthebackboneitself[]:Step \OMS/cmsy/m/n/10 ^^@ \OML/
+cmm/m/it/10 reductionanddistillationspeedupsamplingbutdonotreducetrainingmemory
+ortheneedtostoreactivations\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 salimans[]\OT1/cmr
+/m/n/10 024[]\OML/cmm/m/it/10 ultistep; zheng[]\OT1/cmr/m/n/10 022[]\OML/cmm/m/
+it/10 runcated\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 :$ 
+
+Package natbib Warning: Citation `ma_2024_learning' on page 2 undefined on inpu
+t line 61.
+
+
+Package natbib Warning: Citation `zhan_2024_fast' on page 2 undefined on input 
+line 61.
+
+[2]
+
+Package natbib Warning: Citation `cho_2024_hollowed' on page 3 undefined on inp
+ut line 64.
+
+
+Package natbib Warning: Citation `yan_2023_diffusion' on page 3 undefined on in
+put line 67.
+
+
+Package natbib Warning: Citation `so_2023_temporal' on page 3 undefined on inpu
+t line 70.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.73 ...ng information across segments [ramapuram_
+                                                  2021_kanerva, bulatov_2022...
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.74 
+     
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--74
+\T1/ptm/m/n/10 (+20) Differentiable mem-o-ries and re-cur-rent mem-ory trans-fo
+rm-
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--74
+\T1/ptm/m/n/10 (+20) ers study stor-ing and re-triev-ing in-for-ma-tion across 
+seg-ments
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--74
+\T1/ptm/m/n/10 (+20) [ramapuram$[]\OT1/cmr/m/n/10 021[]\OML/cmm/m/it/10 anerva;
+ bulatov[]\OT1/cmr/m/n/10 022[]\OML/cmm/m/it/10 ecurrent\OT1/cmr/m/n/10 ]\OML/c
+mm/m/it/10 :REMEDy[]scacheisastructured; block \OMS/cmsy/m/n/10 ^^@
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--74
+\OML/cmm/m/it/10 and \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 timekeyedbufferwithl
+earnedcompressionspecializedtodiffusion[]sinter \OMS/cmsy/m/n/10 ^^@
+
+Package natbib Warning: Citation `rombach_2021_high' on page 3 undefined on inp
+ut line 76.
+
+
+Package natbib Warning: Citation `salimans_2024_multistep' on page 3 undefined 
+on input line 76.
+
+
+Package natbib Warning: Citation `ma_2024_learning' on page 3 undefined on inpu
+t line 76.
+
+
+Package natbib Warning: Citation `cho_2024_hollowed' on page 3 undefined on inp
+ut line 76.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.80 ...t$ under a cosine or similar schedule [ho_
+                                                  2020_denoising, song_2020_...
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.81 
+     
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
+\T1/ptm/m/n/10 (+20) We con-sider pixel-space dif-fu-sion with a de-noiser that
+ pre-dicts noise
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
+\T1/ptm/m/n/10 (+20) given a noised sam-ple at timestep $\OML/cmm/m/it/10 t$ \T
+1/ptm/m/n/10 (+20) un-der a co-sine or sim-i-lar sched-
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
+\T1/ptm/m/n/10 (+20) ule [ho$[]\OT1/cmr/m/n/10 020[]\OML/cmm/m/it/10 enoising; 
+song[]\OT1/cmr/m/n/10 020[]\OML/cmm/m/it/10 core\OT1/cmr/m/n/10 ]\OML/cmm/m/it/
+10 :ThebackboneisaUNetwithmulti \OMS/cmsy/m/n/10 ^^@
+
+Overfull \hbox (1185.39926pt too wide) in paragraph at lines 80--81
+\OML/cmm/m/it/10 scaledownsampling; upsampling; andskipconnections:Peaktraining
+memoryisdominatedbystoringintermediatefeaturemapsfrom$\T1/ptm/m/n/10 (-20) L$\O
+ML/cmm/m/it/10 residualblocks\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 naivebackpropst
+oresoneormoretensorsperlayer:Ininference; themodelisevaluatedfor$\T1/ptm/m/n/10
+ (-20) S$\OML/cmm/m/it/10 timesteps; leadingtorepeatedevaluationofthesamelayers
+andredundantintermediaterepresentationsacrossneighboringsteps:$ 
+[3]
+
+Package natbib Warning: Citation `ma_2024_learning' on page 4 undefined on inpu
+t line 89.
+
+
+Package natbib Warning: Citation `so_2023_temporal' on page 4 undefined on inpu
+t line 92.
+
+
+Package natbib Warning: Citation `yan_2023_diffusion' on page 4 undefined on in
+put line 95.
+
+! Undefined control sequence.
+l.102 ... $\ell$ computes a fresh output $y^{\text
+                                                  {new}}$. If the cache cont...
+
+! Undefined control sequence.
+l.102 ...t{new}}$. If the cache contains $y^{\text
+                                                  {cache}}$ for the same key...
+
+! Undefined control sequence.
+l.102 ...nd them as $y = \beta_{\ell,g}\, y^{\text
+                                                  {new}} + (1 - \beta_{\ell,...
+
+! Undefined control sequence.
+l.102 ...t{new}} + (1 - \beta_{\ell,g})\, y^{\text
+                                                  {cache}}$. An L1 penalty $...
+
+
+Package natbib Warning: Citation `ma_2024_learning' on page 4 undefined on inpu
+t line 102.
+
+[4]
+
+Package natbib Warning: Citation `so_2023_temporal' on page 5 undefined on inpu
+t line 108.
+
+
+Package natbib Warning: Citation `ho_2020_denoising' on page 5 undefined on inp
+ut line 111.
+
+
+Package natbib Warning: Citation `yan_2023_diffusion' on page 5 undefined on in
+put line 114.
+
+
+Package natbib Warning: Citation `rombach_2021_high' on page 5 undefined on inp
+ut line 114.
+
+
+Package natbib Warning: Citation `salimans_2024_multistep' on page 5 undefined 
+on input line 114.
+
+! Undefined control sequence.
+l.117 ...{\ell,g} = 0$ (inference), read $y^{\text
+                                                  {cache}}$ and bypass compu...
+
+! Undefined control sequence.
+l.117 ... computation; otherwise compute $y^{\text
+                                                  {new}}$ via the reversible...
+
+! Undefined control sequence.
+l.117 ...nd, during training, blend with $y^{\text
+                                                  {cache}}$ if present. If r...
+
+
+! LaTeX Error: Environment algorithm undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.119 \begin{algorithm}
+                       
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.120 \caption
+              {Reversible forward and backward with scheduled layer re-use}
+
+! LaTeX Error: Environment algorithmic undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.121 \begin{algorithmic}
+                         [1]
+! Undefined control sequence.
+l.122 \State
+             Input noised sample $z_t$, timestep $t$, router $R$, cache $\ma...
+
+! Undefined control sequence.
+l.123 \State
+             Compute time embedding $e_t$; compute group $g \leftarrow g(t)$
+! Undefined control sequence.
+l.124 \State
+             Obtain gates $\{\beta_{\ell,g}\}_{\ell}$ from $R(e_t)$ (soft in...
+
+! Undefined control sequence.
+l.125 \For
+          {each reversible block $\ell = 1,\dots,L$}
+! Undefined control sequence.
+l.126   \If
+           {inference and key $(\ell,g) \in \mathcal{M}$ and $\beta_{\ell,g}...
+
+! Undefined control sequence.
+l.127     \State
+                 Read $y^{\text{cache}} \leftarrow \mathcal{M}[\ell,g]$; set...
+
+! Undefined control sequence.
+l.127     \State Read $y^{\text
+                               {cache}} \leftarrow \mathcal{M}[\ell,g]$; set...
+
+! Undefined control sequence.
+l.127 ...$; set current state $\leftarrow y^{\text
+                                                  {cache}}$
+! Undefined control sequence.
+l.128   \Else
+             
+! Undefined control sequence.
+l.129     \State
+                 Compute $y^{\text{new}}$ via reversible coupling: $y_1 = x_...
+
+! Undefined control sequence.
+l.129     \State Compute $y^{\text
+                                  {new}}$ via reversible coupling: $y_1 = x_...
+
+! Undefined control sequence.
+l.130     \If
+             {training and $(\ell,g) \in \mathcal{M}$}
+! Undefined control sequence.
+l.131       \State
+                   Blend $y \leftarrow \beta_{\ell,g}\, y^{\text{new}} + (1-...
+
+! Undefined control sequence.
+l.131 ...d $y \leftarrow \beta_{\ell,g}\, y^{\text
+                                                  {new}} + (1-\beta_{\ell,g}...
+
+! Undefined control sequence.
+l.132     \Else
+               
+! Undefined control sequence.
+l.133       \State
+                   Set $y \leftarrow y^{\text{new}}$
+! Undefined control sequence.
+l.133       \State Set $y \leftarrow y^{\text
+                                             {new}}$
+! Undefined control sequence.
+l.134     \EndIf
+                
+! Undefined control sequence.
+l.135     \State
+                 Optionally write compressed $y$ to $\mathcal{M}[\ell,g]$ vi...
+
+! Undefined control sequence.
+l.136   \EndIf
+              
+! Undefined control sequence.
+l.137 \EndFor
+             
+! Undefined control sequence.
+l.138 \State
+             Compute diffusion loss and backpropagate
+! Undefined control sequence.
+l.139 \For
+          {each reversible block $\ell = L,\dots,1$}
+! Undefined control sequence.
+l.140   \State
+               Reconstruct inputs by inversion: $x_2 = y_2 - G(y_1, t)$; $x_...
+
+! Undefined control sequence.
+l.141   \If
+           {gradient needs cached path and $(\ell,g) \in \mathcal{M}$}
+! Undefined control sequence.
+l.142     \State
+                 Decode PQ codes for $\mathcal{M}[\ell,g]$ to fp16 on device...
+
+! Undefined control sequence.
+l.143   \EndIf
+              
+! Undefined control sequence.
+l.144   \State
+               Accumulate gradients and free temporaries immediately
+! Undefined control sequence.
+l.145 \EndFor
+             
+
+! LaTeX Error: \begin{document} ended by \end{algorithmic}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.146 \end{algorithmic}
+                       
+
+! LaTeX Error: \begin{document} ended by \end{algorithm}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.147 \end{algorithm}
+                     
+
+Underfull \vbox (badness 5316) has occurred while \output is active [5]
+
+Package natbib Warning: Citation `dhariwal_2021_diffusion' on page 6 undefined 
+on input line 154.
+
+
+Package natbib Warning: Citation `ma_2024_learning' on page 6 undefined on inpu
+t line 154.
+
+
+Package natbib Warning: Citation `yan_2023_diffusion' on page 6 undefined on in
+put line 154.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.157 ... and CLIP-FID when appropriate [dhariwal_
+                                                  2021_diffusion, rombach_20...
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.158 
+      
+
+Overfull \hbox (38.75267pt too wide) in paragraph at lines 157--158
+\T1/ptm/m/n/10 (-20) [dhariwal$[]\OT1/cmr/m/n/10 021[]\OML/cmm/m/it/10 iffusion
+; rombach[]\OT1/cmr/m/n/10 021[]\OML/cmm/m/it/10 igh\OT1/cmr/m/n/10 ]\OML/cmm/m
+/it/10 :MemoryismeasuredaspeakGPURAMduringforward \OMS/cmsy/m/n/10 ^^@
+
+Overfull \hbox (51.83438pt too wide) in paragraph at lines 157--158
+\OML/cmm/m/it/10 only; fullbackward; and\OT1/cmr/m/n/10 50 \OMS/cmsy/m/n/10 ^^@
+ \OML/cmm/m/it/10 stepDDIM \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 styleinference
+:SpeedisreportedasdenoisingFLOPsandper \OMS/cmsy/m/n/10 ^^@
+
+Overfull \hbox (311.65514pt too wide) in paragraph at lines 157--158
+\OML/cmm/m/it/10 imagewall \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 clocklatency:S
+tabilityisassessedviagradientvarianceanddivergenceincidence:Ablationscoverthero
+uterL\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 weightanddiscretizationthreshold; PQbit 
+\OMS/cmsy/m/n/10 ^^@
+
+Package natbib Warning: Citation `ma_2024_learning' on page 6 undefined on inpu
+t line 166.
+
+
+Package natbib Warning: Citation `zhan_2024_fast' on page 6 undefined on input 
+line 166.
+
+
+Package natbib Warning: Citation `salimans_2024_multistep' on page 6 undefined 
+on input line 166.
+
+[6]
+
+Package natbib Warning: Citation `ma_2024_learning' on page 7 undefined on inpu
+t line 172.
+
+
+Package natbib Warning: Citation `so_2023_temporal' on page 7 undefined on inpu
+t line 178.
+
+
+Package natbib Warning: Citation `ma_2024_learning' on page 7 undefined on inpu
+t line 184.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.187 ...es, L2C, and a reversible UNet [dhariwal_
+                                                  2021_diffusion, yan_2023_d...
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.188 
+      
+[7]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.190 ...istillation and solver advances [rombach_
+                                                  2021_high, salimans_2024_m...
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.191 
+      
+! Missing $ inserted.
+<inserted text> 
+                $
+l.192 ...inference-only caching methods [dhariwal_
+                                                  2021_diffusion, yan_2023_d...
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.193 
+      
+
+Underfull \hbox (badness 1077) in paragraph at lines 192--193
+[]\T1/ptm/m/n/10 (+20) Preliminary end-to-end tests at small scale con-firmed t
+he in-tended be-hav-ior: lower peak
+
+Package natbib Warning: Citation `yu_2024_efficient' on page 8 undefined on inp
+ut line 194.
+
+No file paper.bbl.
+
+Package natbib Warning: There were undefined citations.
+
+[8] (./paper.aux)
+kpathsea: Running mktexpk --mfmode / --bdpi 600 --mag 1+0/600 --dpi 600 ectt1000
+mktexpk: Running mf-nowin -progname=mf \mode:=ljfour; mag:=1+0/600; nonstopmode; input ectt1000
+This is METAFONT, Version 2.71828182 (TeX Live 2023/Debian) (preloaded base=mf)
+
+(/usr/share/texlive/texmf-dist/fonts/source/jknappen/ec/ectt1000.mf
+(/usr/share/texlive/texmf-dist/fonts/source/jknappen/ec/exbase.mf)
+(/usr/share/texlive/texmf-dist/fonts/source/jknappen/ec/ectt.mf
+(/usr/share/texlive/texmf-dist/fonts/source/jknappen/ec/exroman.mf
+ Ok (/usr/share/texlive/texmf-dist/fonts/source/jknappen/ec/exaccess.mf
+ Ok) (/usr/share/texlive/texmf-dist/fonts/source/jknappen/ec/expseudo.mf
+ Ok) (/usr/share/texlive/texmf-dist/fonts/source/jknappen/ec/exruwest.mf
+ Ok [192] [193] [194] [195] [196] [197] [198] [199] [200] [201] [202] [203]
+[204] [205] [206] [207] [208] [209] [210] [211] [212] [213] [214] [215]
+[216] [217] [218] [219] [220] [221] [222] [223])
+(/usr/share/texlive/texmf-dist/fonts/source/jknappen/ec/exrlwest.mf
+ Ok [224] [225] [226] [227] [228] [229] [230] [231] [232] [233] [234] [235]
+[236] [237] [238] [239] [240] [241] [242] [243] [244] [245] [246] [247]
+[248] [249] [250] [251] [252] [253] [254] [255])
+(/usr/share/texlive/texmf-dist/fonts/source/jknappen/ec/exrueast.mf
+ Ok [128] [129] [130] [131] [132] [133] [134] [135] [136] [137] [138] [139]
+[140] [141] [142] [143] [144] [145] [146] [147] [148] [149] [150] [151]
+[152] [153] [154] [155] [156] [157])
+(/usr/share/texlive/texmf-dist/fonts/source/jknappen/ec/exrleast.mf
+ Ok [158] [160] [161] [162] [163] [164] [165] [166] [167] [168] [169] [170]
+[171] [172] [173] [174] [175] [176] [177] [178] [179] [180] [181] [182]
+[183] [184] [185] [186] [187] [188])
+(/usr/share/texlive/texmf-dist/fonts/source/jknappen/ec/exbraces.mf
+ Ok [94] [126] [23] [40] [41] [60] [124] [62] [91] [93] [92] [123] [125]
+[95] [127] [32])
+(/usr/share/texlive/texmf-dist/fonts/source/jknappen/ec/expunct.mf
+ Ok [14] [15] [19] [20] [13] [18] [33] [39] [42] [43] [44] [46] [47] [58]
+[59] [61] [96] [189] [17] [45] [16] [21] [22])
+(/usr/share/texlive/texmf-dist/fonts/source/jknappen/ec/exaccent.mf
+ Ok [0] [1] [2] [3] [4] [5] [6] [7] [8] [9] [10] [11] [12])
+(/usr/share/texlive/texmf-dist/fonts/source/jknappen/ec/exsign.mf
+ Ok [24] [34] [35] [36] [37] [64] [191] [159])
+(/usr/share/texlive/texmf-dist/fonts/source/jknappen/ec/exrlig.mf
+ Ok [25] [26] [28] [27] [29] [30] [31])
+(/usr/share/texlive/texmf-dist/fonts/source/jknappen/ec/exromp.mf
+ Ok [38] [63] [190])
+(/usr/share/texlive/texmf-dist/fonts/source/jknappen/ec/exrulett.mf
+ Ok [65] [66] [67] [68] [69] [70] [71] [72] [73] [74] [75] [76] [77] [78]
+[79] [80] [81] [82] [83] [84] [85] [86] [87] [88] [89] [90])
+(/usr/share/texlive/texmf-dist/fonts/source/jknappen/ec/exrllett.mf
+ Ok [97] [98] [99] [100] [101] [102] [103] [104] [105] [106] [107] [108]
+[109] [110] [111] [112] [113] [114] [115] [116] [117] [118] [119] [120]
+[121] [122])
+(/usr/share/texlive/texmf-dist/fonts/source/jknappen/ec/exrdigit.mf
+ Ok [48] [49] [50] [51] [52] [53] [54] [55] [56] [57])
+(/usr/share/texlive/texmf-dist/fonts/source/jknappen/ec/exmligtb.mf
+ Ok) ) ) )
+Font metrics written on ectt1000.tfm.
+Output written on ectt1000.600gf (256 characters, 43832 bytes).
+Transcript written on ectt1000.log.
+mktexpk: /home/runner/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1000.600pk: successfully generated.
+
+
+Package rerunfilecheck Warning: File `paper.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+ )
+(see the transcript file for additional information) </home/runner/.texlive2023
+/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1000.600pk></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on paper.pdf (8 pages, 146120 bytes).
+Transcript written on paper.log.
+This is BibTeX, Version 0.99d (TeX Live 2023/Debian)
+The top-level auxiliary file: paper.aux
+The style file: plainnat.bst
+Database file #1: references.bib
+Repeated entry---line 106 of file references.bib
+ : @article{cho_2024_hollowed
+ :                           ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 176 of file references.bib
+ : @article{dhariwal_2021_diffusion
+ :                                 ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 359 of file references.bib
+ : @article{ma_2024_learning
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 389 of file references.bib
+ : @article{ma_2024_learning
+ :                          ,
+I'm skipping whatever remains of this entry
+Warning--empty journal in cho_2024_hollowed
+Warning--empty journal in dhariwal_2021_diffusion
+Warning--empty journal in ho_2020_denoising
+Warning--empty journal in ma_2024_learning
+Warning--empty journal in rombach_2021_high
+Warning--empty journal in salimans_2024_multistep
+Warning--empty journal in so_2023_temporal
+Warning--empty journal in yan_2023_diffusion
+Warning--empty journal in yu_2024_efficient
+Warning--empty journal in zhan_2024_fast
+(There were 4 error messages)
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(./paper.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-22>
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo))
+(./agents4science_2025.sty
+(/usr/share/texlive/texmf-dist/tex/latex/environ/environ.sty
+(/usr/share/texlive/texmf-dist/tex/latex/trimspaces/trimspaces.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/lineno/lineno.sty
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty))))
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def)
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+(/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/units/nicefrac.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.sty
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype-pdftex.def)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.cfg))
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx))
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def)
+(./paper.aux)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: letterpaper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(92.14519pt, 430.00462pt, 92.14519pt)
+* v-part:(T,H,B)=(95.39737pt, 556.47656pt, 143.09605pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=430.00462pt
+* \textheight=556.47656pt
+* \oddsidemargin=19.8752pt
+* \evensidemargin=19.8752pt
+* \topmargin=-13.87262pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: letterpaper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(108.405pt, 397.48499pt, 108.40501pt)
+* v-part:(T,H,B)=(72.26999pt, 650.43pt, 72.27pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=397.48499pt
+* \textheight=650.43pt
+* \oddsidemargin=36.13501pt
+* \evensidemargin=36.13501pt
+* \topmargin=-37.0pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(./paper.out) (./paper.out)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-ptm.cfg)
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd)
+! Missing $ inserted.
+<inserted text> 
+                $
+l.25 ...ess FLOPs rather than feature-map RAM [ho_
+                                                  2020_denoising, dhariwal_2...
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.26 \end{abstract}
+                   
+! Missing } inserted.
+<inserted text> 
+                }
+l.26 \end{abstract}
+                   
+
+Overfull \hbox (502.77176pt too wide) in paragraph at lines 25--26
+\T1/ptm/m/n/10 (-20) [ho$[]\OT1/cmr/m/n/10 020[]\OML/cmm/m/it/10 enoising; dhar
+iwal[]\OT1/cmr/m/n/10 021[]\OML/cmm/m/it/10 iffusion; ma[]\OT1/cmr/m/n/10 024[]
+\OML/cmm/m/it/10 earning; zhan[]\OT1/cmr/m/n/10 024[]\OML/cmm/m/it/10 ast; cho[
+]\OT1/cmr/m/n/10 024[]\OML/cmm/m/it/10 ollowed; so[]\OT1/cmr/m/n/10 023[]\OML/c
+mm/m/it/10 emporal; yan[]\OT1/cmr/m/n/10 023[]\OML/cmm/m/it/10 iffusion\OT1/cmr
+/m/n/10 ]\OML/cmm/m/it/10 :WeintroduceREMEDy; aunifiedbackbonethatismemory \OMS
+/cmsy/m/n/10 ^^@
+
+Overfull \hbox (87.57574pt too wide) in paragraph at lines 25--26
+\OML/cmm/m/it/10 lightduringbothtrainingandinferencewithoutsacrificingsamplequa
+lity:REMEDycombines \OT1/cmr/m/n/10 :
+
+Overfull \hbox (127.94081pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 (1)\OML/cmm/m/it/10 reversibledual \OMS/cmsy/m/n/10 ^^@ \OML/cm
+m/m/it/10 skipblocksthatmakeboththemainpathandUNetskipconnectioninvertibleunder
+time \OMS/cmsy/m/n/10 ^^@
+
+Overfull \hbox (389.45984pt too wide) in paragraph at lines 25--26
+\OML/cmm/m/it/10 conditionedAdaGN\OT1/cmr/m/n/10 ; (2)\OML/cmm/m/it/10 schedule
+dlayerre \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 useviaalearnedrouterthatcachesco
+mpressedactivationspertimestepgroupandskipsredundantrecomputation\OT1/cmr/m/n/1
+0 ; \OML/cmm/m/it/10 and\OT1/cmr/m/n/10 (3)\OML/cmm/m/it/10 on \OMS/cmsy/m/n/10
+ ^^@
+
+Overfull \hbox (161.50652pt too wide) in paragraph at lines 25--26
+\OML/cmm/m/it/10 the \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 flydynamicquantizedr
+ematerializationwithtemporaldynamicquantizationatinference:Weprovidedrop \OMS/c
+msy/m/n/10 ^^@
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
+\OML/cmm/m/it/10 inPyTorchmodulesandareproducibleharness:Preliminaryend \OMS/cm
+sy/m/n/10 ^^@ \OML/cmm/m/it/10 to \OMS/cmsy/m/n/10 ^^@
+
+Overfull \hbox (564.3585pt too wide) in paragraph at lines 25--26
+\OML/cmm/m/it/10 endtestsonsmallsyntheticsettingsvalidatecorrectnessandshowdire
+ctionalgainsinpeaktrainingmemory; inferencememory; andlatency; withablationscon
+firmingrobustnesstoroutingerrorsandthenear \OMS/cmsy/m/n/10 ^^@
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
+\OML/cmm/m/it/10 losslessnatureof\OT1/cmr/m/n/10 8 \OMS/cmsy/m/n/10 ^^@ \OML/cm
+m/m/it/10 bitcachedactivations:WedetailImageNet \OMS/cmsy/m/n/10 ^^@
+
+Overfull \hbox (359.88838pt too wide) in paragraph at lines 25--26
+\OML/cmm/m/it/10 scaleevaluationagainstADM; DiT; DiffuSSM; L\OT1/cmr/m/n/10 2\O
+ML/cmm/m/it/10 C; andareversibleUNet\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 dhariwal[
+]\OT1/cmr/m/n/10 021[]\OML/cmm/m/it/10 iffusion; rombach[]\OT1/cmr/m/n/10 021[]
+\OML/cmm/m/it/10 igh; yan[]\OT1/cmr/m/n/10 023[]\OML/cmm/m/it/10 iffusion; ma[]
+\OT1/cmr/m/n/10 024[]\OML/cmm/m/it/10 earning\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 
+:[]$ 
+! Extra }, or forgotten \endgroup.
+\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
+                                                  \fi 
+l.26 \end{abstract}
+                   
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd)
+! Missing $ inserted.
+<inserted text> 
+                $
+l.31 ...12$ and $1024\times 1024$ resolutions [ho_
+                                                  2020_denoising, dhariwal_2...
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.32 
+     
+
+Overfull \hbox (669.65685pt too wide) in paragraph at lines 31--32
+\T1/ptm/m/n/10 (-20) [ho$[]\OT1/cmr/m/n/10 020[]\OML/cmm/m/it/10 enoising; dhar
+iwal[]\OT1/cmr/m/n/10 021[]\OML/cmm/m/it/10 iffusion; rombach[]\OT1/cmr/m/n/10 
+021[]\OML/cmm/m/it/10 igh\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 :PeakGPURAMisdominat
+edbyintermediatefeaturemaps:Duringtraining; backpropagationtraditionallyrequire
+sstoringorcheckpointingmanyactivations\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 during
+inference; multi \OMS/cmsy/m/n/10 ^^@
+
+Overfull \hbox (1469.156pt too wide) in paragraph at lines 31--32
+\OML/cmm/m/it/10 stepdenoisingmultipliesmemoryandcomputebythenumberofsteps:Whil
+erecentworkacceleratessampling; reducesFLOPs; orimprovesquantization; thereisst
+illnosinglearchitecturethatreducesmemorycomprehensivelyduringbothtrainingandinf
+erencewithoutcompromisinggenerationquality\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 ma[
+]\OT1/cmr/m/n/10 024[]\OML/cmm/m/it/10 earning; zhan[]\OT1/cmr/m/n/10 024[]\OML
+/cmm/m/it/10 ast; cho[]\OT1/cmr/m/n/10 024[]\OML/cmm/m/it/10 ollowed; so[]\OT1/
+cmr/m/n/10 023[]\OML/cmm/m/it/10 emporal; yan[]\OT1/cmr/m/n/10 023[]\OML/cmm/m/
+it/10 iffusion; salimans[]\OT1/cmr/m/n/10 024[]\OML/cmm/m/it/10 ultistep; zheng
+[]\OT1/cmr/m/n/10 022[]\OML/cmm/m/it/10 runcated\OT1/cmr/m/n/10 ]\OML/cmm/m/it/
+10 :$ 
+
+Package natbib Warning: Citation `ma_2024_learning' on page 1 undefined on inpu
+t line 33.
+
+
+Package natbib Warning: Citation `so_2023_temporal' on page 1 undefined on inpu
+t line 33.
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-
+dist/fonts/enc/dvips/base/8r.enc}]
+
+Package natbib Warning: Citation `ma_2024_learning' on page 2 undefined on inpu
+t line 39.
+
+
+Package natbib Warning: Citation `so_2023_temporal' on page 2 undefined on inpu
+t line 41.
+
+
+Package natbib Warning: Citation `salimans_2024_multistep' on page 2 undefined 
+on input line 43.
+
+
+Package natbib Warning: Citation `rombach_2021_high' on page 2 undefined on inp
+ut line 43.
+
+
+Package natbib Warning: Citation `yan_2023_diffusion' on page 2 undefined on in
+put line 43.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd)
+! Missing $ inserted.
+<inserted text> 
+                $
+l.51 ...SSM, L2C, and a reversible UNet [dhariwal_
+                                                  2021_diffusion, rombach_20...
+
+
+! LaTeX Error: Command \end{itemize} invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.52 \end{itemize}
+                  
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.52 \end{itemize}
+                  
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.52 \end{itemize}
+                  
+! Missing $ inserted.
+<inserted text> 
+                $
+l.52 \end{itemize}
+                  
+
+Package natbib Warning: Citation `yu_2024_efficient' on page 2 undefined on inp
+ut line 54.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.58 ...ocedures for high-fidelity generation [ho_
+                                                  2020_denoising, song_2019_...
+
+
+! LaTeX Error: Command \bfseries invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.58 ...t backbones \cite{dhariwal_2021_diffusion}
+                                                  . Latent diffusion reduces...
+
+
+Package natbib Warning: Citation `dhariwal_2021_diffusion' on page 2 undefined 
+on input line 58.
+
+
+! LaTeX Error: Command \bfseries invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.58 ...e backbone itself \cite{rombach_2021_high}
+                                                  . Step-reduction and disti...
+
+
+Package natbib Warning: Citation `rombach_2021_high' on page 2 undefined on inp
+ut line 58.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.59 
+     
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--59
+\T1/ptm/m/n/10 (+20) Denoising dif-fu-sion prob-a-bilis-tic mod-els and score-b
+ased SDEs es-tab-lished mod-
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--59
+\T1/ptm/m/n/10 (+20) ern train-ing ob-jec-tives and sam-pling pro-ce-dures for 
+high-fidelity gen-er-a-tion
+
+Overfull \hbox (403.6583pt too wide) in paragraph at lines 58--59
+\T1/ptm/m/n/10 (-20) [ho$[]\OT1/cmr/m/n/10 020[]\OML/cmm/m/it/10 enoising; song
+[]\OT1/cmr/m/n/10 019[]\OML/cmm/m/it/10 enerative; song[]\OT1/cmr/m/n/10 020[]\
+OML/cmm/m/it/10 core; sohldickstein[]\OT1/cmr/m/n/10 015[]\OML/cmm/m/it/10 eep\
+OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 :ADMdemonstratedstrongimagesynthesisqualityusi
+ngUNetbackbones[]:Latentdiffusionreducespixel \OMS/cmsy/m/n/10 ^^@
+
+Overfull \hbox (11.44395pt too wide) in paragraph at lines 58--59
+\OML/cmm/m/it/10 spacecostviaautoencodedlatentsandcross \OMS/cmsy/m/n/10 ^^@ \O
+ML/cmm/m/it/10 attentionbutdoesnotdirectlyaddresspeakfeature \OMS/cmsy/m/n/10 ^
+^@
+
+Overfull \hbox (439.21127pt too wide) in paragraph at lines 58--59
+\OML/cmm/m/it/10 mapmemoryinthebackboneitself[]:Step \OMS/cmsy/m/n/10 ^^@ \OML/
+cmm/m/it/10 reductionanddistillationspeedupsamplingbutdonotreducetrainingmemory
+ortheneedtostoreactivations\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 salimans[]\OT1/cmr
+/m/n/10 024[]\OML/cmm/m/it/10 ultistep; zheng[]\OT1/cmr/m/n/10 022[]\OML/cmm/m/
+it/10 runcated\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 :$ 
+
+Package natbib Warning: Citation `ma_2024_learning' on page 2 undefined on inpu
+t line 61.
+
+
+Package natbib Warning: Citation `zhan_2024_fast' on page 2 undefined on input 
+line 61.
+
+[2]
+
+Package natbib Warning: Citation `cho_2024_hollowed' on page 3 undefined on inp
+ut line 64.
+
+
+Package natbib Warning: Citation `yan_2023_diffusion' on page 3 undefined on in
+put line 67.
+
+
+Package natbib Warning: Citation `so_2023_temporal' on page 3 undefined on inpu
+t line 70.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.73 ...ng information across segments [ramapuram_
+                                                  2021_kanerva, bulatov_2022...
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.74 
+     
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--74
+\T1/ptm/m/n/10 (+20) Differentiable mem-o-ries and re-cur-rent mem-ory trans-fo
+rm-
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--74
+\T1/ptm/m/n/10 (+20) ers study stor-ing and re-triev-ing in-for-ma-tion across 
+seg-ments
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--74
+\T1/ptm/m/n/10 (+20) [ramapuram$[]\OT1/cmr/m/n/10 021[]\OML/cmm/m/it/10 anerva;
+ bulatov[]\OT1/cmr/m/n/10 022[]\OML/cmm/m/it/10 ecurrent\OT1/cmr/m/n/10 ]\OML/c
+mm/m/it/10 :REMEDy[]scacheisastructured; block \OMS/cmsy/m/n/10 ^^@
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--74
+\OML/cmm/m/it/10 and \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 timekeyedbufferwithl
+earnedcompressionspecializedtodiffusion[]sinter \OMS/cmsy/m/n/10 ^^@
+
+Package natbib Warning: Citation `rombach_2021_high' on page 3 undefined on inp
+ut line 76.
+
+
+Package natbib Warning: Citation `salimans_2024_multistep' on page 3 undefined 
+on input line 76.
+
+
+Package natbib Warning: Citation `ma_2024_learning' on page 3 undefined on inpu
+t line 76.
+
+
+Package natbib Warning: Citation `cho_2024_hollowed' on page 3 undefined on inp
+ut line 76.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.80 ...t$ under a cosine or similar schedule [ho_
+                                                  2020_denoising, song_2020_...
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.81 
+     
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
+\T1/ptm/m/n/10 (+20) We con-sider pixel-space dif-fu-sion with a de-noiser that
+ pre-dicts noise
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
+\T1/ptm/m/n/10 (+20) given a noised sam-ple at timestep $\OML/cmm/m/it/10 t$ \T
+1/ptm/m/n/10 (+20) un-der a co-sine or sim-i-lar sched-
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
+\T1/ptm/m/n/10 (+20) ule [ho$[]\OT1/cmr/m/n/10 020[]\OML/cmm/m/it/10 enoising; 
+song[]\OT1/cmr/m/n/10 020[]\OML/cmm/m/it/10 core\OT1/cmr/m/n/10 ]\OML/cmm/m/it/
+10 :ThebackboneisaUNetwithmulti \OMS/cmsy/m/n/10 ^^@
+
+Overfull \hbox (1185.39926pt too wide) in paragraph at lines 80--81
+\OML/cmm/m/it/10 scaledownsampling; upsampling; andskipconnections:Peaktraining
+memoryisdominatedbystoringintermediatefeaturemapsfrom$\T1/ptm/m/n/10 (-20) L$\O
+ML/cmm/m/it/10 residualblocks\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 naivebackpropst
+oresoneormoretensorsperlayer:Ininference; themodelisevaluatedfor$\T1/ptm/m/n/10
+ (-20) S$\OML/cmm/m/it/10 timesteps; leadingtorepeatedevaluationofthesamelayers
+andredundantintermediaterepresentationsacrossneighboringsteps:$ 
+[3]
+
+Package natbib Warning: Citation `ma_2024_learning' on page 4 undefined on inpu
+t line 89.
+
+
+Package natbib Warning: Citation `so_2023_temporal' on page 4 undefined on inpu
+t line 92.
+
+
+Package natbib Warning: Citation `yan_2023_diffusion' on page 4 undefined on in
+put line 95.
+
+! Undefined control sequence.
+l.102 ... $\ell$ computes a fresh output $y^{\text
+                                                  {new}}$. If the cache cont...
+
+! Undefined control sequence.
+l.102 ...t{new}}$. If the cache contains $y^{\text
+                                                  {cache}}$ for the same key...
+
+! Undefined control sequence.
+l.102 ...nd them as $y = \beta_{\ell,g}\, y^{\text
+                                                  {new}} + (1 - \beta_{\ell,...
+
+! Undefined control sequence.
+l.102 ...t{new}} + (1 - \beta_{\ell,g})\, y^{\text
+                                                  {cache}}$. An L1 penalty $...
+
+
+Package natbib Warning: Citation `ma_2024_learning' on page 4 undefined on inpu
+t line 102.
+
+[4]
+
+Package natbib Warning: Citation `so_2023_temporal' on page 5 undefined on inpu
+t line 108.
+
+
+Package natbib Warning: Citation `ho_2020_denoising' on page 5 undefined on inp
+ut line 111.
+
+
+Package natbib Warning: Citation `yan_2023_diffusion' on page 5 undefined on in
+put line 114.
+
+
+Package natbib Warning: Citation `rombach_2021_high' on page 5 undefined on inp
+ut line 114.
+
+
+Package natbib Warning: Citation `salimans_2024_multistep' on page 5 undefined 
+on input line 114.
+
+! Undefined control sequence.
+l.117 ...{\ell,g} = 0$ (inference), read $y^{\text
+                                                  {cache}}$ and bypass compu...
+
+! Undefined control sequence.
+l.117 ... computation; otherwise compute $y^{\text
+                                                  {new}}$ via the reversible...
+
+! Undefined control sequence.
+l.117 ...nd, during training, blend with $y^{\text
+                                                  {cache}}$ if present. If r...
+
+
+! LaTeX Error: Environment algorithm undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.119 \begin{algorithm}
+                       
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.120 \caption
+              {Reversible forward and backward with scheduled layer re-use}
+
+! LaTeX Error: Environment algorithmic undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.121 \begin{algorithmic}
+                         [1]
+! Undefined control sequence.
+l.122 \State
+             Input noised sample $z_t$, timestep $t$, router $R$, cache $\ma...
+
+! Undefined control sequence.
+l.123 \State
+             Compute time embedding $e_t$; compute group $g \leftarrow g(t)$
+! Undefined control sequence.
+l.124 \State
+             Obtain gates $\{\beta_{\ell,g}\}_{\ell}$ from $R(e_t)$ (soft in...
+
+! Undefined control sequence.
+l.125 \For
+          {each reversible block $\ell = 1,\dots,L$}
+! Undefined control sequence.
+l.126   \If
+           {inference and key $(\ell,g) \in \mathcal{M}$ and $\beta_{\ell,g}...
+
+! Undefined control sequence.
+l.127     \State
+                 Read $y^{\text{cache}} \leftarrow \mathcal{M}[\ell,g]$; set...
+
+! Undefined control sequence.
+l.127     \State Read $y^{\text
+                               {cache}} \leftarrow \mathcal{M}[\ell,g]$; set...
+
+! Undefined control sequence.
+l.127 ...$; set current state $\leftarrow y^{\text
+                                                  {cache}}$
+! Undefined control sequence.
+l.128   \Else
+             
+! Undefined control sequence.
+l.129     \State
+                 Compute $y^{\text{new}}$ via reversible coupling: $y_1 = x_...
+
+! Undefined control sequence.
+l.129     \State Compute $y^{\text
+                                  {new}}$ via reversible coupling: $y_1 = x_...
+
+! Undefined control sequence.
+l.130     \If
+             {training and $(\ell,g) \in \mathcal{M}$}
+! Undefined control sequence.
+l.131       \State
+                   Blend $y \leftarrow \beta_{\ell,g}\, y^{\text{new}} + (1-...
+
+! Undefined control sequence.
+l.131 ...d $y \leftarrow \beta_{\ell,g}\, y^{\text
+                                                  {new}} + (1-\beta_{\ell,g}...
+
+! Undefined control sequence.
+l.132     \Else
+               
+! Undefined control sequence.
+l.133       \State
+                   Set $y \leftarrow y^{\text{new}}$
+! Undefined control sequence.
+l.133       \State Set $y \leftarrow y^{\text
+                                             {new}}$
+! Undefined control sequence.
+l.134     \EndIf
+                
+! Undefined control sequence.
+l.135     \State
+                 Optionally write compressed $y$ to $\mathcal{M}[\ell,g]$ vi...
+
+! Undefined control sequence.
+l.136   \EndIf
+              
+! Undefined control sequence.
+l.137 \EndFor
+             
+! Undefined control sequence.
+l.138 \State
+             Compute diffusion loss and backpropagate
+! Undefined control sequence.
+l.139 \For
+          {each reversible block $\ell = L,\dots,1$}
+! Undefined control sequence.
+l.140   \State
+               Reconstruct inputs by inversion: $x_2 = y_2 - G(y_1, t)$; $x_...
+
+! Undefined control sequence.
+l.141   \If
+           {gradient needs cached path and $(\ell,g) \in \mathcal{M}$}
+! Undefined control sequence.
+l.142     \State
+                 Decode PQ codes for $\mathcal{M}[\ell,g]$ to fp16 on device...
+
+! Undefined control sequence.
+l.143   \EndIf
+              
+! Undefined control sequence.
+l.144   \State
+               Accumulate gradients and free temporaries immediately
+! Undefined control sequence.
+l.145 \EndFor
+             
+
+! LaTeX Error: \begin{document} ended by \end{algorithmic}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.146 \end{algorithmic}
+                       
+
+! LaTeX Error: \begin{document} ended by \end{algorithm}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.147 \end{algorithm}
+                     
+
+Underfull \vbox (badness 5316) has occurred while \output is active [5]
+
+Package natbib Warning: Citation `dhariwal_2021_diffusion' on page 6 undefined 
+on input line 154.
+
+
+Package natbib Warning: Citation `ma_2024_learning' on page 6 undefined on inpu
+t line 154.
+
+
+Package natbib Warning: Citation `yan_2023_diffusion' on page 6 undefined on in
+put line 154.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.157 ... and CLIP-FID when appropriate [dhariwal_
+                                                  2021_diffusion, rombach_20...
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.158 
+      
+
+Overfull \hbox (38.75267pt too wide) in paragraph at lines 157--158
+\T1/ptm/m/n/10 (-20) [dhariwal$[]\OT1/cmr/m/n/10 021[]\OML/cmm/m/it/10 iffusion
+; rombach[]\OT1/cmr/m/n/10 021[]\OML/cmm/m/it/10 igh\OT1/cmr/m/n/10 ]\OML/cmm/m
+/it/10 :MemoryismeasuredaspeakGPURAMduringforward \OMS/cmsy/m/n/10 ^^@
+
+Overfull \hbox (51.83438pt too wide) in paragraph at lines 157--158
+\OML/cmm/m/it/10 only; fullbackward; and\OT1/cmr/m/n/10 50 \OMS/cmsy/m/n/10 ^^@
+ \OML/cmm/m/it/10 stepDDIM \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 styleinference
+:SpeedisreportedasdenoisingFLOPsandper \OMS/cmsy/m/n/10 ^^@
+
+Overfull \hbox (311.65514pt too wide) in paragraph at lines 157--158
+\OML/cmm/m/it/10 imagewall \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 clocklatency:S
+tabilityisassessedviagradientvarianceanddivergenceincidence:Ablationscoverthero
+uterL\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 weightanddiscretizationthreshold; PQbit 
+\OMS/cmsy/m/n/10 ^^@
+
+Package natbib Warning: Citation `ma_2024_learning' on page 6 undefined on inpu
+t line 166.
+
+
+Package natbib Warning: Citation `zhan_2024_fast' on page 6 undefined on input 
+line 166.
+
+
+Package natbib Warning: Citation `salimans_2024_multistep' on page 6 undefined 
+on input line 166.
+
+[6]
+
+Package natbib Warning: Citation `ma_2024_learning' on page 7 undefined on inpu
+t line 172.
+
+
+Package natbib Warning: Citation `so_2023_temporal' on page 7 undefined on inpu
+t line 178.
+
+
+Package natbib Warning: Citation `ma_2024_learning' on page 7 undefined on inpu
+t line 184.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.187 ...es, L2C, and a reversible UNet [dhariwal_
+                                                  2021_diffusion, yan_2023_d...
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.188 
+      
+[7]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.190 ...istillation and solver advances [rombach_
+                                                  2021_high, salimans_2024_m...
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.191 
+      
+! Missing $ inserted.
+<inserted text> 
+                $
+l.192 ...inference-only caching methods [dhariwal_
+                                                  2021_diffusion, yan_2023_d...
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.193 
+      
+
+Underfull \hbox (badness 1077) in paragraph at lines 192--193
+[]\T1/ptm/m/n/10 (+20) Preliminary end-to-end tests at small scale con-firmed t
+he in-tended be-hav-ior: lower peak
+
+Package natbib Warning: Citation `yu_2024_efficient' on page 8 undefined on inp
+ut line 194.
+
+(./paper.bbl)
+
+Package natbib Warning: There were undefined citations.
+
+[8] (./paper.aux
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+) )
+(see the transcript file for additional information) </home/runner/.texlive2023
+/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1000.600pk></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on paper.pdf (8 pages, 151356 bytes).
+Transcript written on paper.log.
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(./paper.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-22>
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo))
+(./agents4science_2025.sty
+(/usr/share/texlive/texmf-dist/tex/latex/environ/environ.sty
+(/usr/share/texlive/texmf-dist/tex/latex/trimspaces/trimspaces.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/lineno/lineno.sty
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty))))
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def)
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+(/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/units/nicefrac.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.sty
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype-pdftex.def)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.cfg))
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx))
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def)
+(./paper.aux)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: letterpaper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(92.14519pt, 430.00462pt, 92.14519pt)
+* v-part:(T,H,B)=(95.39737pt, 556.47656pt, 143.09605pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=430.00462pt
+* \textheight=556.47656pt
+* \oddsidemargin=19.8752pt
+* \evensidemargin=19.8752pt
+* \topmargin=-13.87262pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: letterpaper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(108.405pt, 397.48499pt, 108.40501pt)
+* v-part:(T,H,B)=(72.26999pt, 650.43pt, 72.27pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=397.48499pt
+* \textheight=650.43pt
+* \oddsidemargin=36.13501pt
+* \evensidemargin=36.13501pt
+* \topmargin=-37.0pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(./paper.out) (./paper.out)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-ptm.cfg)
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd)
+! Missing $ inserted.
+<inserted text> 
+                $
+l.25 ...ess FLOPs rather than feature-map RAM [ho_
+                                                  2020_denoising, dhariwal_2...
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.26 \end{abstract}
+                   
+! Missing } inserted.
+<inserted text> 
+                }
+l.26 \end{abstract}
+                   
+
+Overfull \hbox (502.77176pt too wide) in paragraph at lines 25--26
+\T1/ptm/m/n/10 (-20) [ho$[]\OT1/cmr/m/n/10 020[]\OML/cmm/m/it/10 enoising; dhar
+iwal[]\OT1/cmr/m/n/10 021[]\OML/cmm/m/it/10 iffusion; ma[]\OT1/cmr/m/n/10 024[]
+\OML/cmm/m/it/10 earning; zhan[]\OT1/cmr/m/n/10 024[]\OML/cmm/m/it/10 ast; cho[
+]\OT1/cmr/m/n/10 024[]\OML/cmm/m/it/10 ollowed; so[]\OT1/cmr/m/n/10 023[]\OML/c
+mm/m/it/10 emporal; yan[]\OT1/cmr/m/n/10 023[]\OML/cmm/m/it/10 iffusion\OT1/cmr
+/m/n/10 ]\OML/cmm/m/it/10 :WeintroduceREMEDy; aunifiedbackbonethatismemory \OMS
+/cmsy/m/n/10 ^^@
+
+Overfull \hbox (87.57574pt too wide) in paragraph at lines 25--26
+\OML/cmm/m/it/10 lightduringbothtrainingandinferencewithoutsacrificingsamplequa
+lity:REMEDycombines \OT1/cmr/m/n/10 :
+
+Overfull \hbox (127.94081pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 (1)\OML/cmm/m/it/10 reversibledual \OMS/cmsy/m/n/10 ^^@ \OML/cm
+m/m/it/10 skipblocksthatmakeboththemainpathandUNetskipconnectioninvertibleunder
+time \OMS/cmsy/m/n/10 ^^@
+
+Overfull \hbox (389.45984pt too wide) in paragraph at lines 25--26
+\OML/cmm/m/it/10 conditionedAdaGN\OT1/cmr/m/n/10 ; (2)\OML/cmm/m/it/10 schedule
+dlayerre \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 useviaalearnedrouterthatcachesco
+mpressedactivationspertimestepgroupandskipsredundantrecomputation\OT1/cmr/m/n/1
+0 ; \OML/cmm/m/it/10 and\OT1/cmr/m/n/10 (3)\OML/cmm/m/it/10 on \OMS/cmsy/m/n/10
+ ^^@
+
+Overfull \hbox (161.50652pt too wide) in paragraph at lines 25--26
+\OML/cmm/m/it/10 the \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 flydynamicquantizedr
+ematerializationwithtemporaldynamicquantizationatinference:Weprovidedrop \OMS/c
+msy/m/n/10 ^^@
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
+\OML/cmm/m/it/10 inPyTorchmodulesandareproducibleharness:Preliminaryend \OMS/cm
+sy/m/n/10 ^^@ \OML/cmm/m/it/10 to \OMS/cmsy/m/n/10 ^^@
+
+Overfull \hbox (564.3585pt too wide) in paragraph at lines 25--26
+\OML/cmm/m/it/10 endtestsonsmallsyntheticsettingsvalidatecorrectnessandshowdire
+ctionalgainsinpeaktrainingmemory; inferencememory; andlatency; withablationscon
+firmingrobustnesstoroutingerrorsandthenear \OMS/cmsy/m/n/10 ^^@
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
+\OML/cmm/m/it/10 losslessnatureof\OT1/cmr/m/n/10 8 \OMS/cmsy/m/n/10 ^^@ \OML/cm
+m/m/it/10 bitcachedactivations:WedetailImageNet \OMS/cmsy/m/n/10 ^^@
+
+Overfull \hbox (359.88838pt too wide) in paragraph at lines 25--26
+\OML/cmm/m/it/10 scaleevaluationagainstADM; DiT; DiffuSSM; L\OT1/cmr/m/n/10 2\O
+ML/cmm/m/it/10 C; andareversibleUNet\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 dhariwal[
+]\OT1/cmr/m/n/10 021[]\OML/cmm/m/it/10 iffusion; rombach[]\OT1/cmr/m/n/10 021[]
+\OML/cmm/m/it/10 igh; yan[]\OT1/cmr/m/n/10 023[]\OML/cmm/m/it/10 iffusion; ma[]
+\OT1/cmr/m/n/10 024[]\OML/cmm/m/it/10 earning\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 
+:[]$ 
+! Extra }, or forgotten \endgroup.
+\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
+                                                  \fi 
+l.26 \end{abstract}
+                   
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd)
+! Missing $ inserted.
+<inserted text> 
+                $
+l.31 ...12$ and $1024\times 1024$ resolutions [ho_
+                                                  2020_denoising, dhariwal_2...
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.32 
+     
+
+Overfull \hbox (669.65685pt too wide) in paragraph at lines 31--32
+\T1/ptm/m/n/10 (-20) [ho$[]\OT1/cmr/m/n/10 020[]\OML/cmm/m/it/10 enoising; dhar
+iwal[]\OT1/cmr/m/n/10 021[]\OML/cmm/m/it/10 iffusion; rombach[]\OT1/cmr/m/n/10 
+021[]\OML/cmm/m/it/10 igh\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 :PeakGPURAMisdominat
+edbyintermediatefeaturemaps:Duringtraining; backpropagationtraditionallyrequire
+sstoringorcheckpointingmanyactivations\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 during
+inference; multi \OMS/cmsy/m/n/10 ^^@
+
+Overfull \hbox (1469.156pt too wide) in paragraph at lines 31--32
+\OML/cmm/m/it/10 stepdenoisingmultipliesmemoryandcomputebythenumberofsteps:Whil
+erecentworkacceleratessampling; reducesFLOPs; orimprovesquantization; thereisst
+illnosinglearchitecturethatreducesmemorycomprehensivelyduringbothtrainingandinf
+erencewithoutcompromisinggenerationquality\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 ma[
+]\OT1/cmr/m/n/10 024[]\OML/cmm/m/it/10 earning; zhan[]\OT1/cmr/m/n/10 024[]\OML
+/cmm/m/it/10 ast; cho[]\OT1/cmr/m/n/10 024[]\OML/cmm/m/it/10 ollowed; so[]\OT1/
+cmr/m/n/10 023[]\OML/cmm/m/it/10 emporal; yan[]\OT1/cmr/m/n/10 023[]\OML/cmm/m/
+it/10 iffusion; salimans[]\OT1/cmr/m/n/10 024[]\OML/cmm/m/it/10 ultistep; zheng
+[]\OT1/cmr/m/n/10 022[]\OML/cmm/m/it/10 runcated\OT1/cmr/m/n/10 ]\OML/cmm/m/it/
+10 :$ 
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-
+dist/fonts/enc/dvips/base/8r.enc}]
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd)
+! Missing $ inserted.
+<inserted text> 
+                $
+l.51 ...SSM, L2C, and a reversible UNet [dhariwal_
+                                                  2021_diffusion, rombach_20...
+
+
+! LaTeX Error: Command \end{itemize} invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.52 \end{itemize}
+                  
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.52 \end{itemize}
+                  
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.52 \end{itemize}
+                  
+! Missing $ inserted.
+<inserted text> 
+                $
+l.52 \end{itemize}
+                  
+! Missing $ inserted.
+<inserted text> 
+                $
+l.58 ...ocedures for high-fidelity generation [ho_
+                                                  2020_denoising, song_2019_...
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.59 
+     
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--59
+\T1/ptm/m/n/10 (+20) Denoising dif-fu-sion prob-a-bilis-tic mod-els and score-b
+ased SDEs es-tab-lished mod-
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--59
+\T1/ptm/m/n/10 (+20) ern train-ing ob-jec-tives and sam-pling pro-ce-dures for 
+high-fidelity gen-er-a-tion
+
+Overfull \hbox (517.3055pt too wide) in paragraph at lines 58--59
+\T1/ptm/m/n/10 (-20) [ho$[]\OT1/cmr/m/n/10 020[]\OML/cmm/m/it/10 enoising; song
+[]\OT1/cmr/m/n/10 019[]\OML/cmm/m/it/10 enerative; song[]\OT1/cmr/m/n/10 020[]\
+OML/cmm/m/it/10 core; sohldickstein[]\OT1/cmr/m/n/10 015[]\OML/cmm/m/it/10 eep\
+OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 :ADMdemonstratedstrongimagesynthesisqualityusi
+ngUNetbackbones[][][] \OT1/cmr/m/n/10 [[]2021[]]\OML/cmm/m/it/10 :Latentdiffusi
+onreducespixel \OMS/cmsy/m/n/10 ^^@
+
+Overfull \hbox (11.44395pt too wide) in paragraph at lines 58--59
+\OML/cmm/m/it/10 spacecostviaautoencodedlatentsandcross \OMS/cmsy/m/n/10 ^^@ \O
+ML/cmm/m/it/10 attentionbutdoesnotdirectlyaddresspeakfeature \OMS/cmsy/m/n/10 ^
+^@
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--59
+\OML/cmm/m/it/10 mapmemoryinthebackboneitself[][][] \OT1/cmr/m/n/10 [[]2021[]]\
+OML/cmm/m/it/10 :Step \OMS/cmsy/m/n/10 ^^@
+
+Overfull \hbox (259.46178pt too wide) in paragraph at lines 58--59
+\OML/cmm/m/it/10 reductionanddistillationspeedupsamplingbutdonotreducetrainingm
+emoryortheneedtostoreactivations\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 salimans[]\OT
+1/cmr/m/n/10 024[]\OML/cmm/m/it/10 ultistep; zheng[]\OT1/cmr/m/n/10 022[]\OML/c
+mm/m/it/10 runcated\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 :$ 
+[2]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.73 ...ng information across segments [ramapuram_
+                                                  2021_kanerva, bulatov_2022...
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.74 
+     
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--74
+\T1/ptm/m/n/10 (+20) Differentiable mem-o-ries and re-cur-rent mem-ory trans-fo
+rm-
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--74
+\T1/ptm/m/n/10 (+20) ers study stor-ing and re-triev-ing in-for-ma-tion across 
+seg-ments
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--74
+\T1/ptm/m/n/10 (+20) [ramapuram$[]\OT1/cmr/m/n/10 021[]\OML/cmm/m/it/10 anerva;
+ bulatov[]\OT1/cmr/m/n/10 022[]\OML/cmm/m/it/10 ecurrent\OT1/cmr/m/n/10 ]\OML/c
+mm/m/it/10 :REMEDy[]scacheisastructured; block \OMS/cmsy/m/n/10 ^^@
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--74
+\OML/cmm/m/it/10 and \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 timekeyedbufferwithl
+earnedcompressionspecializedtodiffusion[]sinter \OMS/cmsy/m/n/10 ^^@
+! Missing $ inserted.
+<inserted text> 
+                $
+l.80 ...t$ under a cosine or similar schedule [ho_
+                                                  2020_denoising, song_2020_...
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.81 
+     
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
+\T1/ptm/m/n/10 (+20) We con-sider pixel-space dif-fu-sion with a de-noiser that
+ pre-dicts noise
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
+\T1/ptm/m/n/10 (+20) given a noised sam-ple at timestep $\OML/cmm/m/it/10 t$ \T
+1/ptm/m/n/10 (+20) un-der a co-sine or sim-i-lar sched-
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
+\T1/ptm/m/n/10 (+20) ule [ho$[]\OT1/cmr/m/n/10 020[]\OML/cmm/m/it/10 enoising; 
+song[]\OT1/cmr/m/n/10 020[]\OML/cmm/m/it/10 core\OT1/cmr/m/n/10 ]\OML/cmm/m/it/
+10 :ThebackboneisaUNetwithmulti \OMS/cmsy/m/n/10 ^^@
+
+Overfull \hbox (1185.39926pt too wide) in paragraph at lines 80--81
+\OML/cmm/m/it/10 scaledownsampling; upsampling; andskipconnections:Peaktraining
+memoryisdominatedbystoringintermediatefeaturemapsfrom$\T1/ptm/m/n/10 (-20) L$\O
+ML/cmm/m/it/10 residualblocks\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 naivebackpropst
+oresoneormoretensorsperlayer:Ininference; themodelisevaluatedfor$\T1/ptm/m/n/10
+ (-20) S$\OML/cmm/m/it/10 timesteps; leadingtorepeatedevaluationofthesamelayers
+andredundantintermediaterepresentationsacrossneighboringsteps:$ 
+[3]
+! Undefined control sequence.
+l.102 ... $\ell$ computes a fresh output $y^{\text
+                                                  {new}}$. If the cache cont...
+
+! Undefined control sequence.
+l.102 ...t{new}}$. If the cache contains $y^{\text
+                                                  {cache}}$ for the same key...
+
+! Undefined control sequence.
+l.102 ...nd them as $y = \beta_{\ell,g}\, y^{\text
+                                                  {new}} + (1 - \beta_{\ell,...
+
+! Undefined control sequence.
+l.102 ...t{new}} + (1 - \beta_{\ell,g})\, y^{\text
+                                                  {cache}}$. An L1 penalty $...
+
+[4]
+! Undefined control sequence.
+l.117 ...{\ell,g} = 0$ (inference), read $y^{\text
+                                                  {cache}}$ and bypass compu...
+
+! Undefined control sequence.
+l.117 ... computation; otherwise compute $y^{\text
+                                                  {new}}$ via the reversible...
+
+! Undefined control sequence.
+l.117 ...nd, during training, blend with $y^{\text
+                                                  {cache}}$ if present. If r...
+
+
+! LaTeX Error: Environment algorithm undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.119 \begin{algorithm}
+                       
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.120 \caption
+              {Reversible forward and backward with scheduled layer re-use}
+
+! LaTeX Error: Environment algorithmic undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.121 \begin{algorithmic}
+                         [1]
+! Undefined control sequence.
+l.122 \State
+             Input noised sample $z_t$, timestep $t$, router $R$, cache $\ma...
+
+! Undefined control sequence.
+l.123 \State
+             Compute time embedding $e_t$; compute group $g \leftarrow g(t)$
+! Undefined control sequence.
+l.124 \State
+             Obtain gates $\{\beta_{\ell,g}\}_{\ell}$ from $R(e_t)$ (soft in...
+
+! Undefined control sequence.
+l.125 \For
+          {each reversible block $\ell = 1,\dots,L$}
+! Undefined control sequence.
+l.126   \If
+           {inference and key $(\ell,g) \in \mathcal{M}$ and $\beta_{\ell,g}...
+
+! Undefined control sequence.
+l.127     \State
+                 Read $y^{\text{cache}} \leftarrow \mathcal{M}[\ell,g]$; set...
+
+! Undefined control sequence.
+l.127     \State Read $y^{\text
+                               {cache}} \leftarrow \mathcal{M}[\ell,g]$; set...
+
+! Undefined control sequence.
+l.127 ...$; set current state $\leftarrow y^{\text
+                                                  {cache}}$
+! Undefined control sequence.
+l.128   \Else
+             
+! Undefined control sequence.
+l.129     \State
+                 Compute $y^{\text{new}}$ via reversible coupling: $y_1 = x_...
+
+! Undefined control sequence.
+l.129     \State Compute $y^{\text
+                                  {new}}$ via reversible coupling: $y_1 = x_...
+
+! Undefined control sequence.
+l.130     \If
+             {training and $(\ell,g) \in \mathcal{M}$}
+! Undefined control sequence.
+l.131       \State
+                   Blend $y \leftarrow \beta_{\ell,g}\, y^{\text{new}} + (1-...
+
+! Undefined control sequence.
+l.131 ...d $y \leftarrow \beta_{\ell,g}\, y^{\text
+                                                  {new}} + (1-\beta_{\ell,g}...
+
+! Undefined control sequence.
+l.132     \Else
+               
+! Undefined control sequence.
+l.133       \State
+                   Set $y \leftarrow y^{\text{new}}$
+! Undefined control sequence.
+l.133       \State Set $y \leftarrow y^{\text
+                                             {new}}$
+! Undefined control sequence.
+l.134     \EndIf
+                
+! Undefined control sequence.
+l.135     \State
+                 Optionally write compressed $y$ to $\mathcal{M}[\ell,g]$ vi...
+
+! Undefined control sequence.
+l.136   \EndIf
+              
+! Undefined control sequence.
+l.137 \EndFor
+             
+! Undefined control sequence.
+l.138 \State
+             Compute diffusion loss and backpropagate
+! Undefined control sequence.
+l.139 \For
+          {each reversible block $\ell = L,\dots,1$}
+! Undefined control sequence.
+l.140   \State
+               Reconstruct inputs by inversion: $x_2 = y_2 - G(y_1, t)$; $x_...
+
+! Undefined control sequence.
+l.141   \If
+           {gradient needs cached path and $(\ell,g) \in \mathcal{M}$}
+! Undefined control sequence.
+l.142     \State
+                 Decode PQ codes for $\mathcal{M}[\ell,g]$ to fp16 on device...
+
+! Undefined control sequence.
+l.143   \EndIf
+              
+! Undefined control sequence.
+l.144   \State
+               Accumulate gradients and free temporaries immediately
+! Undefined control sequence.
+l.145 \EndFor
+             
+
+! LaTeX Error: \begin{document} ended by \end{algorithmic}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.146 \end{algorithmic}
+                       
+
+! LaTeX Error: \begin{document} ended by \end{algorithm}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.147 \end{algorithm}
+                     
+[5]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.157 ... and CLIP-FID when appropriate [dhariwal_
+                                                  2021_diffusion, rombach_20...
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.158 
+      
+
+Overfull \hbox (38.75267pt too wide) in paragraph at lines 157--158
+\T1/ptm/m/n/10 (-20) [dhariwal$[]\OT1/cmr/m/n/10 021[]\OML/cmm/m/it/10 iffusion
+; rombach[]\OT1/cmr/m/n/10 021[]\OML/cmm/m/it/10 igh\OT1/cmr/m/n/10 ]\OML/cmm/m
+/it/10 :MemoryismeasuredaspeakGPURAMduringforward \OMS/cmsy/m/n/10 ^^@
+
+Overfull \hbox (51.83438pt too wide) in paragraph at lines 157--158
+\OML/cmm/m/it/10 only; fullbackward; and\OT1/cmr/m/n/10 50 \OMS/cmsy/m/n/10 ^^@
+ \OML/cmm/m/it/10 stepDDIM \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 styleinference
+:SpeedisreportedasdenoisingFLOPsandper \OMS/cmsy/m/n/10 ^^@
+
+Overfull \hbox (311.65514pt too wide) in paragraph at lines 157--158
+\OML/cmm/m/it/10 imagewall \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 clocklatency:S
+tabilityisassessedviagradientvarianceanddivergenceincidence:Ablationscoverthero
+uterL\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 weightanddiscretizationthreshold; PQbit 
+\OMS/cmsy/m/n/10 ^^@
+[6]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.187 ...es, L2C, and a reversible UNet [dhariwal_
+                                                  2021_diffusion, yan_2023_d...
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.188 
+      
+[7]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.190 ...istillation and solver advances [rombach_
+                                                  2021_high, salimans_2024_m...
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.191 
+      
+! Missing $ inserted.
+<inserted text> 
+                $
+l.192 ...inference-only caching methods [dhariwal_
+                                                  2021_diffusion, yan_2023_d...
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.193 
+      
+
+Underfull \hbox (badness 1077) in paragraph at lines 192--193
+[]\T1/ptm/m/n/10 (+20) Preliminary end-to-end tests at small scale con-firmed t
+he in-tended be-hav-ior: lower peak
+(./paper.bbl) [8] (./paper.aux) )
+(see the transcript file for additional information) </home/runner/.texlive2023
+/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1000.600pk></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on paper.pdf (8 pages, 153461 bytes).
+Transcript written on paper.log.
